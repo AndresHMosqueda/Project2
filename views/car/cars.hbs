@@ -1,0 +1,13 @@
+<div id="container">
+  {{#each cars as |car|}}
+  
+  <div>
+    <img src="{{car.imagecar}}" alt="{{car.imagecar}}" class="cardsImg">
+    <h2>{{car.carmodel}}</h2>
+    <p>Owner: {{car.owner}}</p>
+    <p>Features: {{car.features}}</p>
+    <p>Description: {{car.description}}</p>
+    <p>Price: {{car.priceperday}}</p>
+  </div>
+  {{/each}}
+</div>
