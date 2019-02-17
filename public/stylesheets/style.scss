@@ -47,6 +47,16 @@ span {
 .top-left img {
   width: 70px; }
 
+  .header {
+    background-color:rgb(32, 101, 136);
+    background-image: url("https://www.connectyourcare.com/assets/austin-texas-wallpaper-1.jpg");
+    background-size:cover;
+    color:rgb(255,255,255);
+    position:relative;
+    height:630px;
+    
+  }
+
 .top-links {
   display: inline-block;
   padding: 0;
@@ -65,14 +75,15 @@ span {
   width: 400px;
   margin-left: 200px; }
 
+
 .header-text {
-  width: 400px; }
+  width: 450px; }
 
 .collab {
-  background-color: #273547;
-  color: white;
+  background-color: white;
+  color: black;
   height: 450px;
-  padding-top: 100px; }
+  padding-top: 80px; }
 
 .collab img {
   width: 450px; }
@@ -108,12 +119,12 @@ span {
   color: black; }
 
 .list-signup {
-  background-color: #314458; 
+background-color: #314458; 
 color: white;
 }
 
 .make {
-  background-color: white; }
+  background-color: rgb(255, 255, 255); }
 
 .make p {
   color: black; }
@@ -156,6 +167,13 @@ padding: 2px;}
   font-weight: 400;
   font-size: 2.0em; }
 
+  .cardsImg-detail{
+    width: 40%;
+    height: 30%; 
+  }
+.checkout {
+  line-height: 13px;
+}
 #container {
   display: flex;
   flex-wrap: wrap;
