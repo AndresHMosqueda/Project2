@@ -1,35 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
-
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
 body {
-
-min-width: 975px;
-font-family:roboto, monospace;
-}
+  min-width: 975px;
+  font-family: roboto, monospace; }
 
 a {
-  text-decoration:none;
-  color:black; 
-}
-a:hover{
-  text-decoration:none;
-  color: rgb(212, 207, 206);
-}
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  text-decoration: none;
+  color: #d4cfce; }
 
 button {
-  border: none;
   border-radius: 25px;
   color: black;
   padding: 8px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 html {
-  margin: 0; 
-}
-
+  margin: 0; }
 
 nav {
   background-color: black;
@@ -38,155 +30,125 @@ nav {
   padding: 15px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-}
+  justify-content: space-between; }
 
 nav a {
   text-decoration: none;
-  color: white; 
-}
+  color: white; }
 
-span{
-  color: red
-}
+span {
+  color: red; }
 
 .top-left {
   display: inline-block;
-  padding: 0;
-}
+  padding: 0; }
 
 .top-left img {
-  width: 70px;
-}
+  width: 70px; }
 
-.top-links{
+.top-links {
   display: inline-block;
   padding: 0;
-  margin: 0 20px 0 0;
-}
+  margin: 0 20px 0 0; }
 
 .top-links li {
   display: inline-block;
-  margin: 0 10px;
-}
+  margin: 0 10px; }
+
 .cardsImg {
   width: 100%;
-  height: 50%; 
-}
+  height: 50%; }
 
 .jut-content {
   padding-top: 35px;
   width: 400px;
-  margin-left: 200px;
-}
+  margin-left: 200px; }
 
-.header-text{
-  width: 400px;
-}
+.header-text {
+  width: 400px; }
 
 .collab {
-  background-color:rgb(39, 53, 71);
-  color:rgb(255,255,255);
-  height:450px;
-  padding-top:100px;
-}
+  background-color: #273547;
+  color: white;
+  height: 450px;
+  padding-top: 100px; }
 
 .collab img {
-  width: 450px;
-}
+  width: 450px; }
 
 .coll-content {
   width: 900px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .coll-text {
   float: right;
   width: 400px;
-  right: 100px;
-}
+  right: 100px; }
 
 .org-button {
-  background-color: rgb(203, 56, 55)
-}
-.what-is-jut{
-background: url();
-background-size: cover;
-position: relative;
-height: 500px;
-}
+  background-color: #cb3837; }
 
-.what-content{
-width: 300px;
-position: absolute;
-top: 100px;
-left: 200px;
-}
+.what-is-jut {
+  background: url();
+  background-size: cover;
+  position: relative;
+  height: 500px; }
 
-.what-text{
-color:black;
-}
+.what-content {
+  width: 300px;
+  position: absolute;
+  top: 100px;
+  left: 200px; }
 
-.list-signup{
-background-color: rgb(49, 68, 88);
-}
+.what-text {
+  color: black; }
 
-.make{
-background-color: rgb(255,255,255);
-}
+.list-signup {
+  background-color: #314458; }
+
+.make {
+  background-color: white; }
 
 .make p {
-color: black;
-}
+  color: black; }
 
-.make h1, h3{
-  color: black;
-}
+.make h1, h3 {
+  color: black; }
 
-.make-text{
-margin-top: 25px;
-text-align: center;
-}
+.make-text {
+  margin-top: 25px;
+  text-align: center; }
 
 .make aside {
   text-align: center;
-}
+  padding: 2px; }
 
 .make-box img {
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
 
-.asides{
-margin-left: 10%;
-}
-.col-3{
-  width: 30%;
+.asides {
+  margin-left: 10%; }
 
-}
-.col{
-  float:left
-}
+.col-3 {
+  width: 33%; }
+
+.col {
+  float: left; }
 
 .clearfix {
-  clear: both;
-}
+  clear: both; }
 
 .coll-text h2 {
-  font-weight: 400;
-}
+  font-weight: 400; }
 
 .header-text h1 {
   font-weight: 400;
   font-size: 2.5em;
-  margin:0;
-}
+  margin: 0; }
 
 .what-text h2 {
   font-weight: 400;
-  font-size: 2.0em;
-}
-
+  font-size: 2.0em; }
 
 #container {
   display: flex;
@@ -194,17 +156,18 @@ margin-left: 10%;
   align-items: flex-start;
   justify-content: center;
   border: 5px;
-  margin-left: 10px; 
-}
+  margin-left: 10px; }
 
 #container div {
   width: 30%;
   height: 500px;
   margin: 10px;
-  padding: 5px; 
-}
+  padding: 5px; }
 
+.container-footer {
+  width: 100%;
+  display: block; }
 
-
+/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
