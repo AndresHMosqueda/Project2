@@ -1,4 +1,4 @@
-
+<section>
   <div class="jut-content">
     <div class="header-text">
       <h1>Find amazing cars</h1>
@@ -7,29 +7,49 @@
     </div>
   </div>
 
- <section class="collab">
-<div class="coll-content">
-  <form action="/cars" method="POST">
-    <input type="text" placeholder="Los Cabos">
-    <div>
-      <label for="">From</label>
-      <input type="date" id="start" name="startDate" value="2019-02-17">
-      <select name="startTime">
-        <option value="00:00">midnight</option>
-        <option value="00:30 ">12:30am</option>
+</section>
+
+<section class="collab">
+  <div class="coll-content">
+    <form action="/cars" method="POST">
+      <input type="text" placeholder="Los Cabos">
+      <div>
+        <label for="">From</label>
+        <input type="date" id="start" name="startDate" value="2019-02-17">
+        <select name="startTime">
+          <option value="00:00">midnight</option>
+          <option value="00:30 ">12:30am</option>
           <option value="14:30">14:30pm</option>
-      </select>
+        </select>
+      </div>
+      <div>
+        <label for="">Until</label>
+        <input type="date" id="end" name="endDate" value="2019-02-20">
+        <select name="endTime">
+          <option value="00:00">midnight</option>
+          <option value="00:30">12:30am</option>
+          <option value="14:30">14:30pm</option>
+        </select>
+      </div>
+      <button class="org-button" type="submit">Search</button>
+    </form>
+  </div>
+</section>
+
+<section class="what-is-jut">
+  <div class="what-content">
+
+    <div class="what-text">
+      <h2>What's JUT?</h2>
+      <p>Use </p>
     </div>
-    <div>
-      <label for="">Until</label>
-      <input type="date" id="end" name="endDate" value="2019-02-20">
-      <select name="endTime" >
-        <option value="00:00">midnight</option>
-        <option value="00:30">12:30am</option>
-        <option value="14:30">14:30pm</option>
-      </select>
-    </div>
-    <button class="org-button" type="submit">Search</button>
-</form>
-</div>
+
+    <button class="list-signup">Sign Up </button>
+  </div>
+
+</section>
+
+<section>
+
+  
 </section>
