@@ -12,13 +12,13 @@ a {
 }
 a:hover{
   text-decoration:none;
-  color:rgb(255,255,255);
+  color: rgb(212, 207, 206);
 }
 
 button {
   border: none;
   border-radius: 25px;
-  color: rgb(255,255,255);
+  color: black;
   padding: 8px 25px;
   text-align: center;
   text-decoration: none;
@@ -39,8 +39,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  top: 0;
-  z-index: 1; 
+
 }
 
 nav a {
@@ -50,11 +49,62 @@ nav a {
 
 .top-left {
   display: inline-block;
+  padding: 0;
 }
 
+.top-left img {
+  width: 70px;
+}
+
+.top-links{
+  display: inline-block;
+  padding: 0;
+  margin: 0 20px 0 0;
+}
+
+.top-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
 .cardsImg {
   width: 100%;
   height: 50%; 
+}
+
+.jut-content {
+  padding-top: 35px;
+  width: 400px;
+  margin-left: 200px;
+}
+
+.header-text{
+  width: 400px;
+}
+
+.collab {
+  background-color:rgb(39, 53, 71);
+  color:rgb(255,255,255);
+  height:450px;
+  padding-top:100px;
+}
+
+.collab img {
+  width: 450px;
+}
+
+.coll-content {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.coll-text {
+  float: right;
+  width: 400px;
+  right: 100px;
+}
+
+.org-button {
+  background-color: rgb(203, 56, 55);
 }
 
 #container {
