@@ -87,7 +87,10 @@ span {
   right: 100px; }
 
 .org-button {
-  background-color: #cb3837; }
+  border: none;
+  background-color: #cb3837;
+  color: rgb(243, 243, 239);
+ }
 
 .what-is-jut {
   background: url();
@@ -105,7 +108,9 @@ span {
   color: black; }
 
 .list-signup {
-  background-color: #314458; }
+  background-color: #314458; 
+color: white;
+}
 
 .make {
   background-color: white; }
@@ -168,5 +173,11 @@ padding: 2px;}
 .container-footer {
   width: 100%;
   display: block; }
+
+  .you-wont{
+    font-size: 10px;
+    margin-left: 15px;
+    padding-left: 6px;
+  }
 
 /*# sourceMappingURL=style.css.map */

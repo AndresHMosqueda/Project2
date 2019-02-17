@@ -85,11 +85,4 @@ router.get("/confirm/:confirmationCode", (req, res, next) => {
     .catch(e => (e))
 })
 
-// router.get("/cars", (req, res) => {
-//   Car.find()
-//   .then(cars => {
-//     res.render('car/cars', {cars}) 
-//   }) 
-// })
-
 module.exports = router;
