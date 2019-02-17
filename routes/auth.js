@@ -9,12 +9,17 @@ const Car = require("../models/Car")
 const bcrypt = require("bcrypt");
 const bcryptSalt = 10;
 
+function isLogged(req, res, next) {
+  if (req.isAuthenticated()) return next()
+  return res.redirect('/login')
+}
+
 router.get("/login", (req, res, next) => {
   res.render("auth/login", { "message": req.flash("error") });
 });
 
 router.post("/login", passport.authenticate("local", {
-  successRedirect: "/profile",
+  successRedirect: "/",
   failureRedirect: "/auth/login",
   failureFlash: true,
   passReqToCallback: true
@@ -53,7 +58,7 @@ router.post("/signup", (req, res, next) => {
     });
 
 
-    const sent = await sendWelcomeMail(username, gmail, confirmationCode)
+    const sent = await sendWelcomeMail(username, "aandres827@gmail.com", confirmationCode)
 
     newUser.save()
       .then(() => {
@@ -65,7 +70,7 @@ router.post("/signup", (req, res, next) => {
   });
 });
 
-router.get("/logout", (req, res) => {
+router.get("/logout", (req, res, next) => {
   req.logout();
   res.redirect('/');
 });

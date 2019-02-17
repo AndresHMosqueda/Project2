@@ -73,7 +73,6 @@ function isLogged(req, res, next) {
   }
 }
 
-
 // Enable authentication using session + passport
 app.use(session({
   secret: 'irongenerator',
@@ -86,13 +85,13 @@ require('./passport')(app);
     
 
 const index = require('./routes/index');
-app.use('/', index);
+app.use('/',isLogged, index);
 
 const authRoutes = require('./routes/auth');
-app.use('/auth', authRoutes);
+app.use('/auth',isLogged, authRoutes);
 
 const carsRoutes = require('./routes/cars');
-app.use('/', carsRoutes);
+app.use('/',isLogged, carsRoutes);
 
       
 

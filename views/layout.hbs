@@ -13,6 +13,19 @@
 
 <body>
 <nav>
+  {{#if loggedUser}}
+    <div class="top-left">
+      <img src="" alt="Jut">
+    </div>
+
+    <ul class="top-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/auth/signup">Signup</a></li>
+      <li><a href="/auth/logout">Logout</a></li>
+    </ul>
+
+    {{else}}
+
     <div class="top-left">
       <img src="" alt="Jut">
     </div>
@@ -23,6 +36,7 @@
       <li><a href="/auth/signup">Signup</a></li>
       <li><a href="/auth/logout">Logout</a></li>
     </ul>
+{{/if}}
   </nav>
   {{{body}}}
 
