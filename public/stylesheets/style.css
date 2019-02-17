@@ -104,8 +104,59 @@ nav a {
 }
 
 .org-button {
-  background-color: rgb(203, 56, 55);
+  background-color: rgb(203, 56, 55)
 }
+.what-is-jut{
+background: url();
+background-size: cover;
+position: relative;
+height: 500px;
+}
+
+.what-content{
+width: 300px;
+position: absolute;
+top: 100px;
+left: 200px;
+}
+
+.what-text{
+color:black;
+}
+
+.list-signup{
+background-color: rgb(49, 68, 88);
+}
+
+.make{
+background-color: rgb(255,255,255);
+}
+
+.make p {
+color: black;
+}
+
+.make h1, h3{
+  color: black;
+}
+
+.make-text{
+margin-top: 25px;
+text-align: center;
+}
+
+.asides{
+margin-left: 10%;
+}
+.col-3{
+  width: 30%;
+
+}
+.col{
+  float:left
+}
+
+
 
 #container {
   display: flex;
@@ -119,7 +170,6 @@ nav a {
 #container div {
   width: 30%;
   height: 500px;
-  border: 1px solid black;
   margin: 10px;
   padding: 5px; 
 }

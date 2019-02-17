@@ -8,7 +8,7 @@ router.post("/cars", (req, res) => {
 
   let month = `${moment(req.body.startDate).format('MMMM DD YYYY')}`;
   const StartDate = `${month}, ${req.body.startTime}`;
-  
+
   // 1- Buscar coche con formulario StartDate mayor al endDate de la base de datos
   // 2- Si no hay disponibles mandar mensaje en pantalla
 
@@ -23,7 +23,7 @@ router.post("/cars", (req, res) => {
       }
 
       if(cars.length >= 1){
-        message = `There are ${cars.length} cars`
+        message = `There are ${cars.length} cars available`
       }
       res.render('car/cars', { cars,message })
     })
