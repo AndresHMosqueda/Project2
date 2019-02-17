@@ -90,6 +90,10 @@ app.use('/', index);
 
 const authRoutes = require('./routes/auth');
 app.use('/auth', authRoutes);
+
+const carsRoutes = require('./routes/cars');
+app.use('/', carsRoutes);
+
       
 
 module.exports = app;

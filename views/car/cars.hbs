@@ -1,13 +1,16 @@
 <div id="container">
+  {{message}}
   {{#each cars as |car|}}
   
   <div>
+    <a href="/cars/detail/{{car._id}}">
     <img src="{{car.imagecar}}" alt="{{car.imagecar}}" class="cardsImg">
     <h2>{{car.carmodel}}</h2>
     <p>Owner: {{car.owner}}</p>
     <p>Features: {{car.features}}</p>
     <p>Description: {{car.description}}</p>
-    <p>Price: {{car.priceperday}}</p>
+    <p>Price: ${{car.priceperday}}MXN</p>
+    </a>
   </div>
   {{/each}}
 </div>

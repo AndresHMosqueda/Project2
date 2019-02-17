@@ -7,10 +7,8 @@ const carSchema = new Schema({
   features: String,
   imagecar: String,
   description: String,
-  dates: {
-    startdate: Date,
-    enddate:Date,
-  }
+  startDate: String,
+  endDate: String,
   status: {
     type: String,
     enum: ['Available', 'Not Available'],

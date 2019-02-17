@@ -3,24 +3,26 @@
 
 <div>
   
-  <form action="">
+  <form action="/cars" method="POST">
     <input type="text" placeholder="Los Cabos">
     <div>
-      <label class="datepicker" for="">From</label>
-      <input type="date">
-      <select name="startTime" id="">
+      <label for="">From</label>
+      <input type="date" id="start" name="startDate" value="2019-02-17">
+      <select name="startTime">
         <option value="00:00">midnight</option>
-        <option value="00:30">12:30am</option>
+        <option value="00:30 ">12:30am</option>
+          <option value="14:30">14:30pm</option>
       </select>
     </div>
     <div>
-      <label class="datepicker" for="">Until</label>
-      <input type="date">
-      <select name="startTime" id="">
+      <label for="">Until</label>
+      <input type="date" id="end" name="endDate" value="2019-02-20">
+      <select name="endTime" >
         <option value="00:00">midnight</option>
         <option value="00:30">12:30am</option>
+        <option value="14:30">14:30pm</option>
       </select>
     </div>
     <button type="submit">Submit</button>
-
+</form>
 </div>
