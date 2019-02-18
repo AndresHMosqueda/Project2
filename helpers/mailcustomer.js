@@ -17,8 +17,8 @@ exports.sendWelcomeMail = function (name, email, confirmation) {
   return transport.sendMail({
     from: "⚽️",
     bcc: email,
-    subject: "Bienvenido " + name,
-    text: `Hola ${name}! Bienvenido a nuestra ironApp. Confirma aquí: http://localhost:3000/auth/confirm/${confirmation}`
+    subject: "Hola " + name,
+    text: `Hola ${name}! `
   })
     .then(resp => resp)
     .catch(e => console.log(e))

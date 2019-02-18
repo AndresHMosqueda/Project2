@@ -14,7 +14,7 @@ let transport = nodemailer.createTransport({
 
 exports.sendWelcomeMail = function (name, email, confirmation) {
 
-  return transport.sendMail({
+   transport.sendMail({
     from: "⚽️",
     bcc: email,
     subject: "Bienvenido " + name,

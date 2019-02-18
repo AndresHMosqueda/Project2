@@ -2,7 +2,7 @@ const express = require("express");
 const passport = require('passport');
 const router = express.Router();
 const User = require("../models/User");
-let { sendWelcomeMail } = require('../helpers/mailer')
+let {sendWelcomeMail} = require('../helpers/mailer')
 const Car = require("../models/Car")
 
 // Bcrypt to encrypt passwords
@@ -38,7 +38,7 @@ router.post("/signup", (req, res, next) => {
     return;
   }
 
-  User.findOne({ username }, "username", async (err, user) => {
+  User.findOne({ username }, "username",  (err, user) => {
     if (user !== null) {
       res.render("auth/signup", { message: "The username already exists" });
       return;
@@ -57,11 +57,9 @@ router.post("/signup", (req, res, next) => {
       confirmationCode
     });
 
-
-    const sent = await sendWelcomeMail(username, "aandres827@gmail.com", confirmationCode)
-
     newUser.save()
       .then(() => {
+        sendWelcomeMail(username, email, confirmationCode)
         res.redirect("/");
       })
       .catch(err => {
