@@ -45,4 +45,31 @@ router.get("/cars/detail/:id/checkout", (req, res) => {
     })
     .catch(e => res.send(e))
 });
+
+
+router.post("/cars/detail/:id/checkout", (req, res) => {
+
+// mostrar mensaje de pago y redireccionar para que cobre
+
+
+// Enviar correos al owner del coche y al cliente que realizo la reservacion
+
+
+
+//enviar la informacion a la base de datos
+
+
+
+  // console.log("OK")
+  // Car.findById(req.params.id)
+  //   .then(cars => {
+  //     res.render("car/checkout", cars);
+  //   })
+  //   .catch(e => res.send(e))
+});
+
+router.get("/cars/listcar", (req, res, next) => {
+  res.render("customer-list/listcar");
+});
+
 module.exports = router;

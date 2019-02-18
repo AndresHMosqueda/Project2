@@ -98,6 +98,7 @@ span {
 }
 
 .collab img {
+  margin-top: 50px;
   width: 450px; 
 border-radius: 8px;
 }
@@ -131,12 +132,11 @@ border-radius: 8px;
 
   .formheader{
     color: #3b5998;
-    font-size: 2em;
+  
   }
 
   #formclass {
     color:#39373A ;
-    font-size: 1.1em;
   }
 
   .safety{
@@ -165,8 +165,8 @@ color: white;
   text-align: center; }
 
 .make aside {
-  text-align: center; 
-padding: 2px;}
+text-align: center; 
+padding: 5px;}
 
 .make-box img {
   margin-bottom: 15px; }
@@ -175,7 +175,7 @@ padding: 2px;}
   margin-left: 10%; }
 
 .col-3 {
-  width: 33%; }
+  width: 32%; }
 
 .col {
   float: left; }
@@ -218,7 +218,7 @@ padding: 2px;}
 
 .container-footer {
   width: 100%;
-  display: block; }
+  display:block; }
 
   .you-wont{
     font-size: 10px;

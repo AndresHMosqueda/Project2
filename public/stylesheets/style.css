@@ -90,6 +90,7 @@ span {
   right: 80px; }
 
 .collab img {
+  margin-top: 50px;
   width: 450px;
   border-radius: 8px; }
 
@@ -119,12 +120,10 @@ span {
   left: 200px; }
 
 .formheader {
-  color: #3b5998;
-  font-size: 2em; }
+  color: #3b5998; }
 
 #formclass {
-  color: #39373A;
-  font-size: 1.1em; }
+  color: #39373A; }
 
 .safety {
   color: #3b5998; }
@@ -151,7 +150,7 @@ span {
 
 .make aside {
   text-align: center;
-  padding: 2px; }
+  padding: 5px; }
 
 .make-box img {
   margin-bottom: 15px; }
@@ -160,7 +159,7 @@ span {
   margin-left: 10%; }
 
 .col-3 {
-  width: 33%; }
+  width: 32%; }
 
 .col {
   float: left; }

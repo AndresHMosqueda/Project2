@@ -9,6 +9,7 @@ const carSchema = new Schema({
   description: String,
   startDate: String,
   endDate: String,
+  email: String,
   status: {
     type: String,
     enum: ['Available', 'Not Available'],

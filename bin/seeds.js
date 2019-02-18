@@ -12,17 +12,19 @@ const cars = [
       description: "Following the discovery of a new form of space travel as well as Meg's father's disappearance, she, her brother, and her friend must join three magical beings - Mrs. Whatsit, Mrs. Who, and Mrs. Which - to travel across the universe to rescue him from a terrible evil.",
       priceperday: "705",
       startDate: "February 17th 2019, 4:30:26 pm", 
-      endDate: "February 24th 2019, 4:30:26 pm"
+      endDate: "February 24th 2019, 4:30:26 pm",
+      email: "andreshm94@gmail.com"
     },
     {
       carmodel : "Mazda 3",
       owner: "Roberts John",
       features: ["Storm Reid", "Oprah Winfrey", "Reese Witherspoon"],
-      imagecar: "https://car-imagecars.bauersecure.com/pagefiles/84977/new_mazda_3_24.jpg",
+      imagecar: "https://acroadtrip.blob.core.windows.net/catalogo-imagenes/l/RT_V_06e3e9496f9b437ab874d961ff2a431b.jpg",
       description: "Following the discovery of a new form of space travel as well as Meg's father's disappearance, she, her brother, and her friend must join three magical beings - Mrs. Whatsit, Mrs. Who, and Mrs. Which - to travel across the universe to rescue him from a terrible evil.",
       priceperday: "705",
       startDate: "February 16th 2019, 4:30:26 pm", 
-      endDate: "February 20th 2019, 4:30:26 pm"
+      endDate: "February 20th 2019, 4:30:26 pm",
+      email: "aandres827@gmail.com",
     },
     {
       carmodel : "Sienna XLE Limited 2019",
@@ -38,7 +40,7 @@ const cars = [
       carmodel : "Nissan Versa",
       owner: "Shawn Mendez",
       features: ["Storm Reid", "Oprah Winfrey", "Reese Witherspoon"],
-      imagecar: "https://imagecars-na.ssl-imagecars-amazon.com/imagecars/M/MV5BMjMxNjQ5MTI3MV5BMl5BanBnXkFtZTgwMjQ2MTAyNDM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      imagecar: "https://14794cb074070f2635be-909c741dfbd93d74800510af85411879.ssl.cf1.rackcdn.com/3N1CN7APXHL888311/ed958007365366df2e73ac0b6294206f.jpg",
       description: "Following the discovery of a new form of space travel as well as Meg's father's disappearance, she, her brother, and her friend must join three magical beings - Mrs. Whatsit, Mrs. Who, and Mrs. Which - to travel across the universe to rescue him from a terrible evil.",
       priceperday: "705",
       startDate: "February 23th 2019, 4:30:26 pm", 
@@ -48,7 +50,7 @@ const cars = [
       carmodel : "Toyota Prius 2019",
       owner: "Brad Pitt",
       features: ["Storm Reid", "Oprah Winfrey", "Reese Witherspoon"],
-      imagecar: "https://www.hibridosyelectricos.com/media/hibridos/imagecars/2018/04/17/2018041710074024910.jpg",
+      imagecar: "https://www.topgear.es/sites/topgear.es/public/styles/main_element/public/dc/fotos/Toyota-Prius_2016_C01.jpg?itok=fM2k_rlY",
       description: "Following the discovery of a new form of space travel as well as Meg's father's disappearance, she, her brother, and her friend must join three magical beings - Mrs. Whatsit, Mrs. Who, and Mrs. Which - to travel across the universe to rescue him from a terrible evil.",
       priceperday: "705",
       startDate: "February 17th 2019, 4:30:26 pm", 
