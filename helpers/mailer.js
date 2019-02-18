@@ -18,7 +18,7 @@ exports.sendWelcomeMail = function (name, email, confirmation) {
     from: "⚽️",
     bcc: email,
     subject: "Bienvenido " + name,
-    text: `Hola ${name}! Bienvenido a nuestra ironApp. Confirma aquí: http://localhost:3000/auth/confirm/${confirmation}`
+    text: `Hola ${name}! Bienvenido a nuestra ironApp. Confirma aquí: https://murmuring-refuge-64958.herokuapp.com/auth/confirm/${confirmation}`
   })
     .then(resp => resp)
     .catch(e => console.log(e))
