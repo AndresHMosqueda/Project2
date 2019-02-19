@@ -12,13 +12,13 @@ let transport = nodemailer.createTransport({
   }
 });
 
-exports.sendWelcomeMail = function (name, email, confirmation) {
+exports.sendOwnerEmail = function (name, email, confirmation) {
 
   return transport.sendMail({
     from: "⚽️",
     bcc: email,
     subject: "Hola " + name,
-    text: `Hola ${name}! `
+    text: `Hola ${name}!. Te han reservado`
   })
     .then(resp => resp)
     .catch(e => console.log(e))

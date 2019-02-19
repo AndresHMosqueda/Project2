@@ -2,9 +2,18 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const carSchema = new Schema({
+  stateNumber: String,
+  plateNumber: String,
+  selectlongest: String,
+  selectshortest: String,
+  VIN: String,
+  location: String,
   carmodel: String,
-  owner: String,
-  features: String,
+  owner: {
+    type: Schema.Types.ObjectId,
+    ref: "User"
+  },
+  features: [{type: String }],
   imagecar: String,
   description: String,
   startDate: String,

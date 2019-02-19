@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
+
 body {
   min-width: 975px;
   font-family: roboto, monospace; }
@@ -24,7 +25,7 @@ html {
   margin: 0; }
 
 nav {
-  background-color: white;
+  background-color:white;
   width: 100vw;
   height: auto;
   padding: 15px;
@@ -34,12 +35,18 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #3b5998;
-  font-weight: 550;
-  padding-right: 20px; }
+  color: #3b5998; 
+  font-weight:550;
+  padding-right: 20px;
+}
 
 span {
   color: red; }
+
+  footer{
+    width: 100%;
+    padding: 60px 0;
+  }
 
 .top-left {
   display: inline-block;
@@ -48,13 +55,15 @@ span {
 .top-left img {
   width: 70px; }
 
-.header {
-  background-color: #206588;
-  background-image: url("https://www.connectyourcare.com/assets/austin-texas-wallpaper-1.jpg");
-  background-size: cover;
-  color: white;
-  position: relative;
-  height: 610px; }
+  .header {
+    background-color:rgb(32, 101, 136);
+    background-image: url("https://www.connectyourcare.com/assets/austin-texas-wallpaper-1.jpg");
+    background-size:cover;
+    color:rgb(255,255,255);
+    position:relative;
+    height:610px;
+    
+  }
 
 .top-links {
   display: inline-block;
@@ -74,6 +83,7 @@ span {
   width: 400px;
   margin-left: 200px; }
 
+
 .header-text {
   width: 450px; }
 
@@ -82,17 +92,21 @@ span {
   color: #737272;
   font-size: 1em;
   font-weight: 600;
-  height: 450px;
-  padding-top: 80px; }
+  height: 430px;
+  padding-top: 80px;
+}
 
 .travelimg {
   position: absolute;
-  right: 80px; }
+  right: 80px;
+
+}
 
 .collab img {
   margin-top: 50px;
-  width: 450px;
-  border-radius: 8px; }
+  width: 450px; 
+border-radius: 8px;
+}
 
 .coll-content {
   width: 1000px;
@@ -106,9 +120,36 @@ span {
 .org-button {
   border: none;
   background-color: #cb3837;
-  color: #f3f3ef; }
+  color: rgb(243, 243, 239);
+ }
+
+
+ .background{
+  background-color: #000000b8;
+  height: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+ }
+
+ .hide{
+  display: none;
+ }
+
+ .alert{
+  position: absolute;
+  background-color: #ffffff;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  max-width: 28rem;
+  padding: 1.5rem;
+
+ }
 
 .what-is-jut {
+  //background: url("https://cmxpv89733.i.lithium.com/t5/image/serverpage/image-id/82937i163CEC7FAC876446/image-size/large?v=1.0&px=999");
   background-size: cover;
   position: relative;
   height: 350px; }
@@ -119,47 +160,64 @@ span {
   top: 10px;
   left: 200px; }
 
-.formheader {
-  color: #3b5998; }
+  .formheader{
+    color: #3b5998;
+  
+  }
 
-.confirmation {
-  text-align: center; }
+  .confirmation{
+    text-align: center;
+  }
 
-#formclass {
-  color: #39373A; }
+  #formclass {
+    color:#39373A ;
+  }
 
-.safety {
-  color: #3b5998; }
+  .safety{
+    color: #3b5998;
+  }
 
 .what-text {
   color: black; }
 
 .list-signup {
-  background-color: #314458;
-  color: white; }
+background-color: #A048F8; 
+color: white;
+}
 
 .make {
-  background-color: white; }
+  background-color: rgb(255, 255, 255); 
+  height: 400px;
+  text-align: center;
+}
 
 .make p {
-  color: gray; }
+  color: gray;
+  text-align: center; }
 
 .make h1, h3 {
-  color: #3b5998; }
+  color: #3b5998; 
+text-align: center;
+}
 
 .make-text {
   margin-top: 25px;
   text-align: center; }
 
 .make aside {
-  text-align: center;
-  padding: 5px; }
+text-align: center; 
+padding: 5px;}
 
 .make-box img {
   margin-bottom: 15px; }
 
 .asides {
   margin-left: 10%; }
+
+.asides img {
+    width: 300px;
+    height: 300px;
+  }
 
 .col-3 {
   width: 32%; }
@@ -182,13 +240,13 @@ span {
   font-weight: 400;
   font-size: 2.0em; }
 
-.cardsImg-detail {
-  width: 40%;
-  height: 30%; }
-
+  .cardsImg-detail{
+    width: 40%;
+    height: 30%; 
+  }
 .checkout {
-  line-height: 13px; }
-
+  line-height: 13px;
+}
 #container {
   display: flex;
   flex-wrap: wrap;
@@ -203,15 +261,36 @@ span {
   margin: 10px;
   padding: 5px; }
 
-.container-footer {
-  width: 100%;
-  display: block; }
+// #footer{
+// text-align: center;
+// padding: 20px;
+// }
 
-.you-wont {
-  font-size: 10px;
-  margin-left: 15px;
-  padding-left: 6px; }
+  .you-wont{
+    font-size: 10px;
+    margin-left: 15px;
+    padding-left: 6px;
+  }
+
+.binoculars {
+  background-image: url("/public/images/binoculars.svg")
+}
+
 
 /*# sourceMappingURL=style.css.map */
+.copyright {
+  color: white;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
 
-/*# sourceMappingURL=style.css.map */
+.bottom-container {
+  text-align: center;
+  background-color: #201C24;
+  padding: 30px 0 20px;
+  height: 70px;
+}
+
+.footer-link{
+color: white;
+}

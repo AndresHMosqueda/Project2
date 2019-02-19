@@ -43,6 +43,11 @@ nav a {
 span {
   color: red; }
 
+  footer{
+    width: 100%;
+    padding: 60px 0;
+  }
+
 .top-left {
   display: inline-block;
   padding: 0; }
@@ -87,7 +92,7 @@ span {
   color: #737272;
   font-size: 1em;
   font-weight: 600;
-  height: 450px;
+  height: 430px;
   padding-top: 80px;
 }
 
@@ -116,6 +121,31 @@ border-radius: 8px;
   border: none;
   background-color: #cb3837;
   color: rgb(243, 243, 239);
+ }
+
+
+ .background{
+  background-color: #000000b8;
+  height: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+ }
+
+ .hide{
+  display: none;
+ }
+
+ .alert{
+  position: absolute;
+  background-color: #ffffff;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  max-width: 28rem;
+  padding: 1.5rem;
+
  }
 
 .what-is-jut {
@@ -151,18 +181,24 @@ border-radius: 8px;
   color: black; }
 
 .list-signup {
-background-color: #314458; 
+background-color: #A048F8; 
 color: white;
 }
 
 .make {
-  background-color: rgb(255, 255, 255); }
+  background-color: rgb(255, 255, 255); 
+  height: 400px;
+  text-align: center;
+}
 
 .make p {
-  color: gray; }
+  color: gray;
+  text-align: center; }
 
 .make h1, h3 {
-  color: #3b5998; }
+  color: #3b5998; 
+text-align: center;
+}
 
 .make-text {
   margin-top: 25px;
@@ -177,6 +213,11 @@ padding: 5px;}
 
 .asides {
   margin-left: 10%; }
+
+.asides img {
+    width: 300px;
+    height: 300px;
+  }
 
 .col-3 {
   width: 32%; }
@@ -220,9 +261,10 @@ padding: 5px;}
   margin: 10px;
   padding: 5px; }
 
-.container-footer {
-  width: 100%;
-  display:block; }
+// #footer{
+// text-align: center;
+// padding: 20px;
+// }
 
   .you-wont{
     font-size: 10px;
@@ -230,4 +272,25 @@ padding: 5px;}
     padding-left: 6px;
   }
 
+.binoculars {
+  background-image: url("/public/images/binoculars.svg")
+}
+
+
 /*# sourceMappingURL=style.css.map */
+.copyright {
+  color: white;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.bottom-container {
+  text-align: center;
+  background-color: #201C24;
+  padding: 30px 0 20px;
+  height: 70px;
+}
+
+.footer-link{
+color: white;
+}
