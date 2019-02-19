@@ -138,7 +138,7 @@ footer {
   height: 350px; }
 
 .what-content {
-  width: 300px;
+  width: 400px;
   position: absolute;
   top: 10px;
   left: 200px; }
@@ -247,7 +247,6 @@ footer {
 .binoculars {
   background-image: url("/public/images/binoculars.svg"); }
 
-/*# sourceMappingURL=style.css.map */
 .copyright {
   color: white;
   font-size: 0.75rem;
