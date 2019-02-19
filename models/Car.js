@@ -7,18 +7,21 @@ const carSchema = new Schema({
   selectlongest: String,
   selectshortest: String,
   VIN: String,
+  passengers: String,
+  transmission: String,
   location: String,
   carmodel: String,
+  name: String,
   owner: {
     type: Schema.Types.ObjectId,
     ref: "User"
   },
-  features: [{type: String }],
+  features: [String],
   imagecar: String,
   description: String,
   startDate: String,
   endDate: String,
-  email: String,
+ 
   status: {
     type: String,
     enum: ['Available', 'Not Available'],

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
-
 body {
   min-width: 975px;
   font-family: roboto, monospace; }
@@ -25,7 +24,7 @@ html {
   margin: 0; }
 
 nav {
-  background-color:white;
+  background-color: white;
   width: 100vw;
   height: auto;
   padding: 15px;
@@ -35,18 +34,16 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #3b5998; 
-  font-weight:550;
-  padding-right: 20px;
-}
+  color: #3b5998;
+  font-weight: 550;
+  padding-right: 20px; }
 
 span {
   color: red; }
 
-  footer{
-    width: 100%;
-    padding: 60px 0;
-  }
+footer {
+  width: 100%;
+  padding: 60px 0; }
 
 .top-left {
   display: inline-block;
@@ -55,15 +52,13 @@ span {
 .top-left img {
   width: 70px; }
 
-  .header {
-    background-color:rgb(32, 101, 136);
-    background-image: url("https://www.connectyourcare.com/assets/austin-texas-wallpaper-1.jpg");
-    background-size:cover;
-    color:rgb(255,255,255);
-    position:relative;
-    height:610px;
-    
-  }
+.header {
+  background-color: #206588;
+  background-image: url("https://www.connectyourcare.com/assets/austin-texas-wallpaper-1.jpg");
+  background-size: cover;
+  color: white;
+  position: relative;
+  height: 610px; }
 
 .top-links {
   display: inline-block;
@@ -83,7 +78,6 @@ span {
   width: 400px;
   margin-left: 200px; }
 
-
 .header-text {
   width: 450px; }
 
@@ -93,20 +87,16 @@ span {
   font-size: 1em;
   font-weight: 600;
   height: 430px;
-  padding-top: 80px;
-}
+  padding-top: 80px; }
 
 .travelimg {
   position: absolute;
-  right: 80px;
-
-}
+  right: 80px; }
 
 .collab img {
   margin-top: 50px;
-  width: 450px; 
-border-radius: 8px;
-}
+  width: 450px;
+  border-radius: 8px; }
 
 .coll-content {
   width: 1000px;
@@ -120,36 +110,29 @@ border-radius: 8px;
 .org-button {
   border: none;
   background-color: #cb3837;
-  color: rgb(243, 243, 239);
- }
+  color: #f3f3ef; }
 
-
- .background{
+.background {
   background-color: #000000b8;
   height: 100vw;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
- }
+  width: 100vw; }
 
- .hide{
-  display: none;
- }
+.hide {
+  display: none; }
 
- .alert{
+.alert {
   position: absolute;
   background-color: #ffffff;
   margin: 0 auto;
   left: 0;
   right: 0;
   max-width: 28rem;
-  padding: 1.5rem;
-
- }
+  padding: 1.5rem; }
 
 .what-is-jut {
-  //background: url("https://cmxpv89733.i.lithium.com/t5/image/serverpage/image-id/82937i163CEC7FAC876446/image-size/large?v=1.0&px=999");
   background-size: cover;
   position: relative;
   height: 350px; }
@@ -160,53 +143,49 @@ border-radius: 8px;
   top: 10px;
   left: 200px; }
 
-  .formheader{
-    color: #3b5998;
-  
-  }
+.formheader {
+  color: #3b5998; }
 
-  .confirmation{
-    text-align: center;
-  }
+.confirmation {
+  text-align: center; }
 
-  #formclass {
-    color:#39373A ;
-  }
+#formclass {
+  color: #39373A; }
 
-  .safety{
-    color: #3b5998;
-  }
+.safety {
+  color: #3b5998; }
 
 .what-text {
   color: black; }
 
 .list-signup {
-background-color: #A048F8; 
-color: white;
-}
+  background-color: #A048F8;
+  color: white; }
 
 .make {
-  background-color: rgb(255, 255, 255); 
+  background-color: white;
   height: 400px;
+  text-align: center; }
+
+.signupheader {
   text-align: center;
-}
+  color: #3b5998; }
 
 .make p {
   color: gray;
   text-align: center; }
 
 .make h1, h3 {
-  color: #3b5998; 
-text-align: center;
-}
+  color: #3b5998;
+  text-align: center; }
 
 .make-text {
   margin-top: 25px;
   text-align: center; }
 
 .make aside {
-text-align: center; 
-padding: 5px;}
+  text-align: center;
+  padding: 5px; }
 
 .make-box img {
   margin-bottom: 15px; }
@@ -215,9 +194,8 @@ padding: 5px;}
   margin-left: 10%; }
 
 .asides img {
-    width: 300px;
-    height: 300px;
-  }
+  width: 300px;
+  height: 300px; }
 
 .col-3 {
   width: 32%; }
@@ -240,13 +218,13 @@ padding: 5px;}
   font-weight: 400;
   font-size: 2.0em; }
 
-  .cardsImg-detail{
-    width: 40%;
-    height: 30%; 
-  }
+.cardsImg-detail {
+  width: 40%;
+  height: 30%; }
+
 .checkout {
-  line-height: 13px;
-}
+  line-height: 13px; }
+
 #container {
   display: flex;
   flex-wrap: wrap;
@@ -261,36 +239,66 @@ padding: 5px;}
   margin: 10px;
   padding: 5px; }
 
-// #footer{
-// text-align: center;
-// padding: 20px;
-// }
-
-  .you-wont{
-    font-size: 10px;
-    margin-left: 15px;
-    padding-left: 6px;
-  }
+.you-wont {
+  font-size: 10px;
+  margin-left: 15px;
+  padding-left: 6px; }
 
 .binoculars {
-  background-image: url("/public/images/binoculars.svg")
-}
-
+  background-image: url("/public/images/binoculars.svg"); }
 
 /*# sourceMappingURL=style.css.map */
 .copyright {
   color: white;
   font-size: 0.75rem;
-  padding: 20px 0;
-}
+  padding: 20px 0; }
 
 .bottom-container {
   text-align: center;
   background-color: #201C24;
   padding: 30px 0 20px;
-  height: 70px;
-}
+  height: 70px; }
 
-.footer-link{
-color: white;
-}
+.footer-link {
+  color: white; }
+
+#form {
+  margin: 30px auto;
+  width: 380px; }
+
+#form label {
+  color: #666;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%; }
+
+#form input,
+#form button {
+  box-sizing: border-box;
+  font-size: 14px;
+  outline: 0;
+  padding: 4px;
+  width: 100%;
+  margin-bottom: 20px; }
+
+#form button {
+  background: #43a3e6;
+  border: 1px solid #43a3e6;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s ease background;
+  width: 100%; }
+
+#form button:hover {
+  background: #fff;
+  color: #43a3e6;
+  transition: .3s ease background; }
+
+/*# sourceMappingURL=style.css.map */

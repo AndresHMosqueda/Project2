@@ -79,7 +79,7 @@ router.post("/cars/listcar", function (req, res, next)  {
     .then(auto => {
       res.render('', {message: "Tu post se creo"})
     })
-    .catch(e => res.render('error', e))
+    .catch(e => res.send( e))
 
 
   console.log(req.body)

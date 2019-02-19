@@ -4,43 +4,52 @@
 <div class="background"></div>
 
 <div class="alert">
-<h4>You will need:</h4>
+  <h4>You will need:</h4>
 
-<div>
-  <h3>License plate number</h3>
-  <p>We need it to ensure your car is protected by our vehicle protection packages</p>
+  <div>
+    <h3>License plate number</h3>
+    <p>We need it to ensure your car is protected by our vehicle protection packages</p>
+  </div>
+
+  <div>
+    <h3>Valid ID or passport</h3>
+    <p>JUT requires everyone using JUT web page to use their real name and birthday.</p>
+  </div>
+
+  <div>
+    <h3>Photos of your car</h3>
+    <p>Customers will need to see your car before they rent it</p>
+  </div>
+  <button class="action" type="button">Accept</button>
 </div>
 
-<div>
-  <h3>Valid ID or passport</h3>
-  <p>JUT requires everyone using JUT web page to use their real name and birthday.</p>
-</div>
 
-<div>
-  <h3>Photos of your car</h3>
-  <p>Customers will need to see your car before they rent it</p>
-</div>
-<button class="action" type="button">Accept</button>
-</div>
-
-
-<form action="/cars/listcar" method="POST">
+<form action="/cars/listcar" method="POST" id="form">
   <h3>Your car</h3>
   <div>
     <label for="">Where is your car located?</label>
     <input type="text" placeholder="Enter Address" name="location">
 
-    <button>Next</button>
+    <label for="">Car brand & model </label>
+    <input type="text" placeholder="Enter car model" name="carmodel">
+
     <label for="">Vehicle Identificacion Number</label>
     <input type="text" placeholder="Enter unique VIN" name="VIN">
 
-    <button>Next</button>
+    <label for="">Passengers</label>
+    <input type="text" placeholder="Seating for" name="passengers">
+
+    <label for="">Transmission type</label>
+    <input type="text" placeholder="Seating for" name="transmission">
+
+    <label for="">Price per day</label>
+    <input type="text" placeholder="Price per day" name="priceperday">
   </div>
 
   <div>
     <h3>Driver's License</h3>
     <label for="">Issuing country</label>
-    <select name="Issuing country" >
+    <select name="Issuing country">
       <option value=>Country</option>
       <option value="AF">Afghanistan</option>
       <option value="AX">Åland Islands</option>
@@ -299,20 +308,9 @@
     </div>
 
     <div>
-      <label for="">First Name</label>
-      <input type="text" name="fistName">
+      <label for="">First Name & Last name</label>
+      <input type="text" name="name">
     </div>
-
-    <div>
-      <label for="">Middle name</label>
-      <input type="text" name="middleName">
-    </div>
-
-    <div>
-      <label for="">Last name</label>
-      <input type="text" name="lastName">
-    </div>
-
 
     <p>Enter your name <span>exactly as it appears on your driver's license.</span></p>
 
@@ -433,12 +431,15 @@
         <option value="1942">1942</option>
       </select>
 
-      <button>Next</button>
     </div>
 
 
     <div>
       <h3>Car availability</h3>
+
+      <h5>Indicate Start Day</h5>
+      <label for="">Start Date</label>
+      <input type="date" placeholder="Start Date" name="startDate endDate">
 
       <h5>How much advance notice do you need to confirm a trip?</h5>
       <label for="">Advance notice</label>
@@ -482,7 +483,6 @@
         <option value="3months">3 months</option>
       </select>
 
-      <button>Next</button>
     </div>
 
     <div>
@@ -497,7 +497,8 @@
         <label for="">Car description</label>
       </div>
       <div>
-        <textarea name="" id="" cols="70" rows="10">A detailed description will help to get more reservations</textarea>
+        <textarea id="" cols="70" rows="10"
+          name="description" placeholder="A detailed description will help to get more reservations"></textarea>
       </div>
       <p>No need to include your contact info, travelers will receive it once you confirm their trip</p>
     </div>
@@ -553,19 +554,19 @@
 
     <label for="">Photos must be smaller than 10mb(640px by 320px)</label>
     <div>
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-      <input type="file"  name="imagecar">
-      <input type="submit" value="Save" name="">
-    </form>
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="imagecar">
+        <input type="submit" value="Save" name="">
+      </form>
 
-  <section>
-    {{#each pictures}}
-    <h2>Upload your photo</h2>
-    <img src="{{this.path}}" alt="{{this.originalName}}"/>
-    {{/each}}
-  </section>
+      <section>
+        {{#each pictures}}
+        <h2>Upload your photo</h2>
+        <img src="{{this.path}}" alt="{{this.originalName}}" />
+        {{/each}}
+      </section>
 
-  </div>
+    </div>
 
     <input type="submit" value="Enviar">
-    </form>
+</form>
