@@ -1,17 +1,20 @@
-<a href="/cars/detail/{{_id}}">Go back</a>
-<br>
 <br>
 
-<div>
-  <img src="{{car.imagecar}}" alt="{{imagecar}}" class="cardsImg-detail">
+<div class="detailcar">
+  <img src="{{imagecar}}" alt="{{carmodels}}" class="cardsImg-detail">
   <h2>{{carmodel}}</h2>
-  <p>Owner: {{owner}}</p>
-  <p>Features: {{features}}</p>
-  <p>Description: {{description}}</p>
-  <p>Price: ${{priceperday}}MXN</p>
-
-  <a href="/cars/detail/{{_id}}/checkout"><button>Go to checkout</button></a>
+  </div>
+  <div class="checkoutpar">
+  
+  <b><p>Owner:</b> {{name}}</p>
+  <b><p>Features:</b> {{features}}</p>
+  <b><p>Description:</b> {{description}}</p>
+  <b><p>Price:</b> ${{priceperday}}MXN</p>
+  </div>
+  <div class="detailcar">
+  <a href="/cars/detail/{{_id}}/checkout"><button class="bookbutton">Go to checkout</button></a>
   <p class="you-wont">You won't be charged yet</p>
+  </div>
 </div>
 <div>
 </div>

@@ -93,13 +93,18 @@ span {
   font-size: 1em;
   font-weight: 600;
   height: 430px;
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 .travelimg {
   position: absolute;
-  right: 80px;
+  right: 70px;
 
+}
+
+.featuresbox{
+  display: inline-block;
+  display: center;
 }
 
 .collab img {
@@ -119,10 +124,26 @@ border-radius: 8px;
 
 .org-button {
   border: none;
-  background-color: #cb3837;
-  color: rgb(243, 243, 239);
+  background-color: #F1F72E;
+  color: black;
+  font-weight: 600
  }
 
+ .bookbutton{
+  border: none;
+  background-color: #F1F72E;
+  color: black;
+  font-weight: 600
+ }
+
+ .detailcar{
+   text-align: center;
+   
+ }
+
+ .checkoutpar{
+   text-align: justify;
+ }
 
  .background{
   background-color: #000000b8;
@@ -138,7 +159,7 @@ border-radius: 8px;
  }
 
  .alert{
-  position: absolute;
+  position: fixed;
   background-color: #ffffff;
   margin: 0 auto;
   left: 0;
@@ -149,7 +170,7 @@ border-radius: 8px;
  }
 
 .what-is-jut {
-  //background: url("https://cmxpv89733.i.lithium.com/t5/image/serverpage/image-id/82937i163CEC7FAC876446/image-size/large?v=1.0&px=999");
+  background: url("https://cmxpv89733.i.lithium.com/t5/image/serverpage/image-id/82937i163CEC7FAC876446/image-size/large?v=1.0&px=999");
   background-size: cover;
   position: relative;
   height: 350px; }
@@ -200,7 +221,7 @@ color: white;
 
 .make h1, h3 {
   color: #3b5998; 
-text-align: center;
+  text-align: center
 }
 
 .make-text {
@@ -212,7 +233,7 @@ text-align: center;
 padding: 5px;}
 
 .make-box img {
-  margin-bottom: 15px; }
+  margin-bottom: 150px; }
 
 .asides {
   margin-left: 10%; }
@@ -246,6 +267,7 @@ padding: 5px;}
   .cardsImg-detail{
     width: 40%;
     height: 30%; 
+    border-radius: 20px
   }
 .checkout {
   line-height: 13px;
@@ -270,10 +292,6 @@ padding: 5px;}
     padding-left: 6px;
   }
 
-.binoculars {
-  background-image: url("/public/images/binoculars.svg")
-}
-
 .copyright {
   color: white;
   font-size: 0.75rem;
@@ -290,6 +308,52 @@ padding: 5px;}
 .footer-link{
 color: white;
 }
+
+#containercheckout{
+  margin: 30px auto;
+  width: 640px;
+  line-height: 25px;
+  text-align: left
+}
+#containercheckout label {
+  color: #666;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+#containercheckout input,
+#containercheckout button {
+  box-sizing: border-box;
+  font-size: 14px;
+  outline: 0;
+  padding: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#containercheckout button {
+  background: #F1F72E;
+  border: 1px solid #F1F72E;
+  border-radius: 6px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s ease background;
+  width: 100%;
+}
+
+#containercheckout button:hover {
+  background: #F1F72E;
+  color: white;
+  transition: .3s ease background;
+}
+
 
 #form {
   margin: 30px auto;
@@ -334,3 +398,17 @@ color: white;
   color: #43a3e6;
   transition: .3s ease background;
 }
+
+.check{
+color: orange;
+text-align: center;
+}
+
+.check h2{
+  color: orange;
+  text-align: center;
+  }
+
+
+
+  

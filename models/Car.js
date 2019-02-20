@@ -12,15 +12,14 @@ const carSchema = new Schema({
   location: String,
   carmodel: String,
   name: String,
-  owner: {
-    type: Schema.Types.ObjectId,
-    ref: "User"
+  owner: String,
+  features: {
+    bike: String
   },
-  features: [String],
   imagecar: String,
   description: String,
   startDate: String,
-  endDate: String,
+  endDate: {type: Date, default: Date.now },
  
   status: {
     type: String,

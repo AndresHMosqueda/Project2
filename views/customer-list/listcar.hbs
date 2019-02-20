@@ -1,6 +1,3 @@
-<h1>Listing your car is simple</h1>
-
-
 <div class="background"></div>
 
 <div class="alert">
@@ -24,7 +21,8 @@
 </div>
 
 
-<form action="/cars/listcar" method="POST" id="form">
+<form action="/cars/listcar" method="POST" id="form" >
+  <h1>Listing your car is simple</h1>
   <h3>Your car</h3>
   <div>
     <label for="">Where is your car located?</label>
@@ -40,7 +38,7 @@
     <input type="text" placeholder="Seating for" name="passengers">
 
     <label for="">Transmission type</label>
-    <input type="text" placeholder="Seating for" name="transmission">
+    <input type="text" placeholder="Transmission type" name="transmission">
 
     <label for="">Price per day</label>
     <input type="text" placeholder="Price per day" name="priceperday">
@@ -439,7 +437,7 @@
 
       <h5>Indicate Start Day</h5>
       <label for="">Start Date</label>
-      <input type="date" placeholder="Start Date" name="startDate endDate">
+      <input type="date" placeholder="Start Date" name="startDate">
 
       <h5>How much advance notice do you need to confirm a trip?</h5>
       <label for="">Advance notice</label>
@@ -497,30 +495,30 @@
         <label for="">Car description</label>
       </div>
       <div>
-        <textarea id="" cols="70" rows="10"
-          name="description" placeholder="A detailed description will help to get more reservations"></textarea>
+        <textarea id="" cols="70" rows="10" name="description"
+          placeholder="A detailed description will help to get more reservations"></textarea>
       </div>
       <p>No need to include your contact info, travelers will receive it once you confirm their trip</p>
     </div>
 
     <div>
       <h5>Car features</h5>
-      <input type="checkbox" value="false" name="features">
+      <input type="checkbox"  name="GPS">
       <label for=""> GPS
       </label>
 
-      <input type="checkbox" value="false" name="features">
+      <input type="checkbox"  name="AUDIO">
       <label for=""> Audio input
       </label>
 
-      <input type="checkbox" value="false" name="features">
+      <input type="checkbox"  name="USB">
       <label for=""> USB input
       </label>
 
-      <input type="checkbox" value="false" name="features">
+      <input type="checkbox" name="BIKE">
       <label for=""> Bike rack
       </label>
-
+{{!-- 
       <input type="checkbox" value="false" name="features">
       <label for=""> Convertible
       </label>
@@ -543,7 +541,7 @@
 
       <input type="checkbox" value="false" name="features">
       <label for=""> Ski Rack
-      </label>
+      </label> --}}
     </div>
 
     <div>
@@ -554,19 +552,11 @@
 
     <label for="">Photos must be smaller than 10mb(640px by 320px)</label>
     <div>
-      <form action="/upload" method="POST" enctype="multipart/form-data">
-        <input type="file" name="imagecar">
-        <input type="submit" value="Save" name="">
+      <form action="/uploadmultiple" method="POST" enctype="multipart/form-data">
+        <input type="file" name="myFiles" multiple>
+      
       </form>
-
-      <section>
-        {{#each pictures}}
-        <h2>Upload your photo</h2>
-        <img src="{{this.path}}" alt="{{this.originalName}}" />
-        {{/each}}
-      </section>
-
     </div>
 
-    <input type="submit" value="Enviar">
+    <button type="submit" value="Enviar">Submit </button>
 </form>

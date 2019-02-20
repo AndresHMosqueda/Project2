@@ -3,9 +3,11 @@ const router = express.Router();
 const Car = require("../models/Car")
 const mongoose = require('mongoose')
 const moment = require('moment');
-const multer  = require('multer');
+const multer = require('multer');
 const Picture = require('../models/picture');
 const upload = multer({ dest: './public/uploads/' });
+const bodyParser = require('body-parser')
+
 
 router.post("/cars", (req, res) => {
   let month = `${moment(req.body.startDate).format('MMMM DD YYYY')}`;
@@ -49,55 +51,63 @@ router.get("/cars/detail/:id/checkout", (req, res) => {
 
 router.post("/cars/detail/:id/checkout", (req, res) => {
 
-// mostrar mensaje de pago y redireccionar para que cobre
-res.send("Booked! We will send you an email with the car details")
+  // mostrar mensaje de pago y redireccionar para que cobre
+  res.send("Booked! We will send you an email with the car details")
 
-// Enviar correos al owner del coche y al cliente que realizo la reservacion
+  // Enviar correos al owner del coche y al cliente que realizo la reservacion
 
-
-
-//enviar la informacion a la base de datos
-
-
-
-  // console.log("OK")
-  // Car.findById(req.params.id)
-  //   .then(cars => {
-  //     res.render("car/checkout", cars);
-  //   })
-  //   .catch(e => res.send(e))
+  //enviar la informacion a la base de datos
 });
 
-router.get("/cars/listcar", function (req, res, next)  {
-  Picture.find((err,pictures) =>{
+router.get("/cars/listcar", function (req, res, next) {
+  Picture.find((err, pictures) => {
     res.render("customer-list/listcar");
   });
-  })
+})
 
-router.post("/cars/listcar", function (req, res, next)  {
-  Car.create(req.body)
-    .then(auto => {
-      res.render('', {message: "Tu post se creo"})
-    })
-    .catch(e => res.send( e))
-
+router.post("/cars/listcar",  async (req, res, next) =>{
 
   console.log(req.body)
+
+  // return res.json({
+  //   ...req.body,
+  //   features: [
+  //     {bike: req.body.bike},
+  //     {gps: req.body.GPS},
+  //     {audio: req.body.AUDIO}
+  //   ]
+  // })
+const payload= {
+  ...req.body,
+  features: {
+    bike: req.body.BIKE 
+  }
+}
+  const createCar = new Car({...payload});
+
+  createCar.save()
+   .then(auto => {   
+      res.render('', { message: "Tu post se creo" })
+    })
+    .catch(e => res.send(e))
+
+
+
   // Car.save();
   // Picture.find((err,pictures) =>{
   //   res.render("customer-list/listcar");
   // });
 })
 
-router.post("/upload", upload.single('photo'), (req, res) => {
-  const pic = new Picture({
-    name: req.body.name,
-    path: `/uploads/${req.file.filename}`,
-    originalName: req.file.originalname
-  });
-  pic.save((err)=>{
-    res.redirect("customer-list/listcar")
-  })
-});
+// app.post('/uploadmultiple', upload.array('myFiles', 5), (req, res, next) => {
+//   const files = req.files
+//   if (!files) {
+//     const error = new Error('Please choose files')
+//     error.httpStatusCode = 400
+//     return next(error)
+//   }
+//   res.send(files)
+// })
+
 
 module.exports = router;
