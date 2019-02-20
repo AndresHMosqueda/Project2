@@ -21,7 +21,7 @@
 </div>
 
 
-<form action="/cars/listcar" method="POST" id="form" >
+<form action="/cars/listcar" method="POST" id="form">
   <h1>Listing your car is simple</h1>
   <h3>Your car</h3>
   <div>
@@ -501,29 +501,33 @@
       <p>No need to include your contact info, travelers will receive it once you confirm their trip</p>
     </div>
 
-   
-      <h5>Car features</h5>
-      <label> GPS</label> 
-      <input type="checkbox" name="GPS"/>
-      
+<div class="featuresbox">
+    <h5>Car features</h5>
 
-      <input type="checkbox" name="AUDIO">
-      <label > Audio input</label>
+    <label>GPS
+      <input class="forminput" type="checkbox" name="GPS" placeholder="GPS"/>
+    </label>
 
-      <input type="checkbox" name="USB">
-      <label > USB input</label>
+    <label> Audio input
+      <input class="forminput" type="checkbox" name="AUDIO">
+    </label>
 
-      <input type="checkbox" name="BIKE">
-      <label> Bike rack</label>
-   
+    <label> USB input
+      <input  class="forminput"  type="checkbox" name="USB">
+    </label>
 
+    <label> Bike rack
+      <input class="forminput"  type="checkbox" name="BIKE">
+    </label>
+
+</div>
     <div>
       <h5>Car photos </h5>
       <p>It's important for travelers to see your car before they request it. Once you have the perfect photo that shows
         the whole car, add more photos displaying the car's details and interior</p>
     </div>
 
-    <label for="">Photos must be smaller than 10mb(640px by 320px)</label>
+    <label for="">Copy Image Address and paste it below:</label>
     <div>
       <input type="text" name="imagecar">
       {{!-- <form action="/uploadmultiple" method="POST" enctype="multipart/form-data">

@@ -15,7 +15,7 @@ router.post("/cars", (req, res) => {
   // 1- Buscar coche con formulario StartDate mayor al endDate de la base de datos
   // 2- Si no hay disponibles mandar mensaje en pantalla
   // BUSCAR CARROS DISPONIBLES
-  Car.find({ endDate: { $gte: StartDate } })
+  Car.find({ endDate: { $gte: StartDate }})
     .then(cars => {
       let message;
       if (cars.length <= 0) {
@@ -56,7 +56,6 @@ router.post("/cars/detail/:id/checkout", (req, res) => {
 
   // Enviar correos al owner del coche y al cliente que realizo la reservacion
 
-  //enviar la informacion a la base de datos
 });
 
 router.get("/cars/listcar", function (req, res, next) {
@@ -91,23 +90,10 @@ const payload= {
     })
     .catch(e => res.send(e))
 
-
-
-  // Car.save();
-  // Picture.find((err,pictures) =>{
-  //   res.render("customer-list/listcar");
-  // });
+ 
 })
 
-// app.post('/uploadmultiple', upload.array('myFiles', 5), (req, res, next) => {
-//   const files = req.files
-//   if (!files) {
-//     const error = new Error('Please choose files')
-//     error.httpStatusCode = 400
-//     return next(error)
-//   }
-//   res.send(files)
-// })
+
 
 
 module.exports = router;

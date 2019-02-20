@@ -11,6 +11,7 @@ const userSchema = new Schema({
   state: String,
   username: String,
   password: String,
+  googleID: String,
   status: {
     type: String,
     enum: ['Pending Confirmation', 'Active'],

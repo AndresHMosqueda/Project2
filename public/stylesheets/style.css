@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro");
 body {
   min-width: 975px;
-  font-family: roboto, monospace; }
+  font-family: 'Maven Pro', sans-serif; }
 
 a {
   text-decoration: none;
@@ -94,7 +94,7 @@ footer {
   right: 70px; }
 
 .featuresbox {
-  display: inline-block;
+  display: block;
   display: center; }
 
 .collab img {
@@ -198,7 +198,8 @@ footer {
   text-align: center; }
 
 .make-text {
-  margin-top: 25px;
+  margin-top: 65px;
+  width: 100vw;
   text-align: center; }
 
 .make aside {
@@ -206,11 +207,14 @@ footer {
   padding: 5px; }
 
 .make-box img {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-top: 15px; }
 
+.text {
+  margin-bottom: 30px; }
+
 .asides {
-  margin-left: 10%; }
+  margin-left: 20px; }
 
 .icons {
   height: 200px;
@@ -269,11 +273,26 @@ footer {
   font-size: 0.75rem;
   padding: 20px 0; }
 
+.firstfooter {
+  background-color: #201C24;
+  display: inline-block;
+  width: 100vw; }
+
 .bottom-container {
   text-align: center;
+  display: block;
   background-color: #201C24;
   padding: 30px 0 20px;
-  height: 70px; }
+  height: 80px;
+  color: white;
+  width: 100vw; }
+
+.google-btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  background: #ff5353; }
 
 .footer-link {
   color: white; }
@@ -337,7 +356,10 @@ footer {
   outline: 0;
   padding: 4px;
   width: 100%;
-  margin-bottom: 20px; }
+  margin-bottom: 22px; }
+
+.forminput {
+  width: 20px; }
 
 #form button {
   background: #43a3e6;
