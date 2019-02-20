@@ -42,8 +42,8 @@ span {
   color: red; }
 
 footer {
-  width: 100%;
-  padding: 60px 0; }
+  width: 100vw;
+  padding: 40px 0; }
 
 .top-left {
   display: inline-block;
@@ -153,7 +153,7 @@ footer {
   background: url("https://cmxpv89733.i.lithium.com/t5/image/serverpage/image-id/82937i163CEC7FAC876446/image-size/large?v=1.0&px=999");
   background-size: cover;
   position: relative;
-  height: 350px; }
+  height: 380px; }
 
 .what-content {
   width: 400px;
@@ -206,14 +206,15 @@ footer {
   padding: 5px; }
 
 .make-box img {
-  margin-bottom: 150px; }
+  margin-bottom: 10px;
+  margin-top: 15px; }
 
 .asides {
   margin-left: 10%; }
 
-.asides img {
-  width: 300px;
-  height: 300px; }
+.icons {
+  height: 200px;
+  border-radius: 10px; }
 
 .col-3 {
   width: 32%; }

@@ -307,7 +307,7 @@
 
     <div>
       <label for="">First Name & Last name</label>
-      <input type="text" name="name">
+      <input type="text" name="owner">
     </div>
 
     <p>Enter your name <span>exactly as it appears on your driver's license.</span></p>
@@ -501,48 +501,21 @@
       <p>No need to include your contact info, travelers will receive it once you confirm their trip</p>
     </div>
 
-    <div>
+   
       <h5>Car features</h5>
-      <input type="checkbox"  name="GPS">
-      <label for=""> GPS
-      </label>
+      <label> GPS</label> 
+      <input type="checkbox" name="GPS"/>
+      
 
-      <input type="checkbox"  name="AUDIO">
-      <label for=""> Audio input
-      </label>
+      <input type="checkbox" name="AUDIO">
+      <label > Audio input</label>
 
-      <input type="checkbox"  name="USB">
-      <label for=""> USB input
-      </label>
+      <input type="checkbox" name="USB">
+      <label > USB input</label>
 
       <input type="checkbox" name="BIKE">
-      <label for=""> Bike rack
-      </label>
-{{!-- 
-      <input type="checkbox" value="false" name="features">
-      <label for=""> Convertible
-      </label>
-
-      <input type="checkbox" value="false" name="features">
-      <label for=""> Bluetooth
-      </label>
-
-      <input type="checkbox" value="false" name="features">
-      <label for=""> Child seat
-      </label>
-
-      <input type="checkbox" value="false" name="features">
-      <label for=""> Pet friendly
-      </label>
-
-      <input type="checkbox" value="false" name="features">
-      <label for=""> Sunroof
-      </label>
-
-      <input type="checkbox" value="false" name="features">
-      <label for=""> Ski Rack
-      </label> --}}
-    </div>
+      <label> Bike rack</label>
+   
 
     <div>
       <h5>Car photos </h5>
@@ -552,10 +525,11 @@
 
     <label for="">Photos must be smaller than 10mb(640px by 320px)</label>
     <div>
-      <form action="/uploadmultiple" method="POST" enctype="multipart/form-data">
-        <input type="file" name="myFiles" multiple>
+      <input type="text" name="imagecar">
+      {{!-- <form action="/uploadmultiple" method="POST" enctype="multipart/form-data">
+       
       
-      </form>
+      </form> --}}
     </div>
 
     <button type="submit" value="Enviar">Submit </button>

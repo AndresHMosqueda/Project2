@@ -11,6 +11,7 @@ const carSchema = new Schema({
   transmission: String,
   location: String,
   carmodel: String,
+  passengers: String,
   name: String,
   owner: String,
   features: {
