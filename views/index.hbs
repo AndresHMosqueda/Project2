@@ -10,131 +10,133 @@
 
 </section>
 
- <a name="bookcar"></a>
-<section class="collab" >
+<a name="bookcar"></a>
+<section class="collab">
   <div class="coll-content">
     <div class="travelimg">
       <img src="https://media.insureyonder.com/wp-content/uploads/2018/04/25202710/Travel.png" alt="travelimg">
     </div>
     <form action="/cars" method="POST">
-      <h1 class="formheader">Book cars from local hosts around the world</h1>
-      <label id="formclass" for="">Pickup Location</label>
-      <input type="text" placeholder="Enter city" autocomplete="on">
-      <div>
-        <br>
-        <label id="formclass" for="">Pickup Date & Time:</label>
-        <input type="date" id="start" name="startDate" value="2019-02-22">
-        <select name="startTime">
-          <option value="00:00">midnight</option>
-          <option value="00:30">12:30 am</option>
-          <option value="01:00">01:00 am</option>
-          <option value="01:30">01:30 am</option>
-          <option value="02:00">02:00 am</option>
-          <option value="02:30">02:30 am</option>
-          <option value="03:00">03:00 am</option>
-          <option value="03:30">03:30 am</option>
-          <option value="04:00">04:00 am</option>
-          <option value="04:30">04:30 am</option>
-          <option value="05:00">05:00 am</option>
-          <option value="05:30">05:30 am</option>
-          <option value="06:00">06:00 am</option>
-          <option value="06:30">06:30 am</option>
-          <option value="07:00">07:00 am</option>
-          <option value="07:30">07:30 am</option>
-          <option value="08:00">08:00 am</option>
-          <option value="08:30">08:30 am</option>
-          <option value="09:00">09:00 am</option>
-          <option value="09:30">09:30 am</option>
-          <option value="10:00">10:00 am</option>
-          <option value="10:30">10:30 am</option>
-          <option value="11:00">11:00 am</option>
-          <option value="11:30">11:30 am</option>
-          <option value="12:00">12:00 pm</option>
-          <option value="12:30">12:30 pm</option>
-          <option value="13:00">13:00 pm</option>
-          <option value="13:30">13:30 pm</option>
-          <option value="14:00">14:00 pm</option>
-          <option value="14:30">14:30 pm</option>
-          <option value="15:00">15:00 pm</option>
-          <option value="15:30">15:30 pm</option>
-          <option value="16:00">16:00 pm</option>
-          <option value="16:30">16:30 pm</option>
-          <option value="17:00">17:00 pm</option>
-          <option value="17:30">17:30 pm</option>
-          <option value="18:00">18:00 pm</option>
-          <option value="18:30">18:30 pm</option>
-          <option value="19:00">19:00 pm</option>
-          <option value="19:30">19:30 pm</option>
-          <option value="20:00">20:00 pm</option>
-          <option value="20:30">20:30 pm</option>
-          <option value="21:00">21:00 pm</option>
-          <option value="21:30">21:30 pm</option>
-          <option value="22:00">22:00 pm</option>
-          <option value="22:30">22:30 pm</option>
-          <option value="23:00">23:00 pm</option>
-          <option value="23:30">23:30 pm</option>
+      <div class="container-search">
+        <h1 class="formheader">Book cars from local hosts around the world</h1>
+        <label id="formclass" for="">Pickup Location</label>
+        <input type="text" placeholder="Enter city" autocomplete="on" name="location">
+        <div>
+          <br>
+          <label id="formclass" for="">Pickup Date & Time:</label>
+          <input type="date" id="start" name="startDate" value="2019-02-22">
+          <select name="startTime">
+            <option value="00:00">midnight</option>
+            <option value="00:30">12:30 am</option>
+            <option value="01:00">01:00 am</option>
+            <option value="01:30">01:30 am</option>
+            <option value="02:00">02:00 am</option>
+            <option value="02:30">02:30 am</option>
+            <option value="03:00">03:00 am</option>
+            <option value="03:30">03:30 am</option>
+            <option value="04:00">04:00 am</option>
+            <option value="04:30">04:30 am</option>
+            <option value="05:00">05:00 am</option>
+            <option value="05:30">05:30 am</option>
+            <option value="06:00">06:00 am</option>
+            <option value="06:30">06:30 am</option>
+            <option value="07:00">07:00 am</option>
+            <option value="07:30">07:30 am</option>
+            <option value="08:00">08:00 am</option>
+            <option value="08:30">08:30 am</option>
+            <option value="09:00">09:00 am</option>
+            <option value="09:30">09:30 am</option>
+            <option value="10:00">10:00 am</option>
+            <option value="10:30">10:30 am</option>
+            <option value="11:00">11:00 am</option>
+            <option value="11:30">11:30 am</option>
+            <option value="12:00">12:00 pm</option>
+            <option value="12:30">12:30 pm</option>
+            <option value="13:00">13:00 pm</option>
+            <option value="13:30">13:30 pm</option>
+            <option value="14:00">14:00 pm</option>
+            <option value="14:30">14:30 pm</option>
+            <option value="15:00">15:00 pm</option>
+            <option value="15:30">15:30 pm</option>
+            <option value="16:00">16:00 pm</option>
+            <option value="16:30">16:30 pm</option>
+            <option value="17:00">17:00 pm</option>
+            <option value="17:30">17:30 pm</option>
+            <option value="18:00">18:00 pm</option>
+            <option value="18:30">18:30 pm</option>
+            <option value="19:00">19:00 pm</option>
+            <option value="19:30">19:30 pm</option>
+            <option value="20:00">20:00 pm</option>
+            <option value="20:30">20:30 pm</option>
+            <option value="21:00">21:00 pm</option>
+            <option value="21:30">21:30 pm</option>
+            <option value="22:00">22:00 pm</option>
+            <option value="22:30">22:30 pm</option>
+            <option value="23:00">23:00 pm</option>
+            <option value="23:30">23:30 pm</option>
 
-        </select>
-      </div>
-      <br>
-      <div>
-        <label id="formclass" for="">Return Date & Time
-        </label>
-        <input type="date" id="end" name="endDate" value="2019-02-24">
-        <select name="endTime">
-          <option value="00:00">midnight</option>
-          <option value="00:30">12:30 am</option>
-          <option value="01:00">01:00 am</option>
-          <option value="01:30">01:30 am</option>
-          <option value="02:00">02:00 am</option>
-          <option value="02:30">02:30 am</option>
-          <option value="03:00">03:00 am</option>
-          <option value="03:30">03:30 am</option>
-          <option value="04:00">04:00 am</option>
-          <option value="04:30">04:30 am</option>
-          <option value="05:00">05:00 am</option>
-          <option value="05:30">05:30 am</option>
-          <option value="06:00">06:00 am</option>
-          <option value="06:30">06:30 am</option>
-          <option value="07:00">07:00 am</option>
-          <option value="07:30">07:30 am</option>
-          <option value="08:00">08:00 am</option>
-          <option value="08:30">08:30 am</option>
-          <option value="09:00">09:00 am</option>
-          <option value="09:30">09:30 am</option>
-          <option value="10:00">10:00 am</option>
-          <option value="10:30">10:30 am</option>
-          <option value="11:00">11:00 am</option>
-          <option value="11:30">11:30 am</option>
-          <option value="12:00">12:00 pm</option>
-          <option value="12:30">12:30 pm</option>
-          <option value="13:00">13:00 pm</option>
-          <option value="13:30">13:30 pm</option>
-          <option value="14:00">14:00 pm</option>
-          <option value="14:30">14:30 pm</option>
-          <option value="15:00">15:00 pm</option>
-          <option value="15:30">15:30 pm</option>
-          <option value="16:00">16:00 pm</option>
-          <option value="16:30">16:30 pm</option>
-          <option value="17:00">17:00 pm</option>
-          <option value="17:30">17:30 pm</option>
-          <option value="18:00">18:00 pm</option>
-          <option value="18:30">18:30 pm</option>
-          <option value="19:00">19:00 pm</option>
-          <option value="19:30">19:30 pm</option>
-          <option value="20:00">20:00 pm</option>
-          <option value="20:30">20:30 pm</option>
-          <option value="21:00">21:00 pm</option>
-          <option value="21:30">21:30 pm</option>
-          <option value="22:00">22:00 pm</option>
-          <option value="22:30">22:30 pm</option>
-          <option value="23:00">23:00 pm</option>
-          <option value="23:30">23:30 pm</option>
-        </select>
-      </div>
-      <br>
-      <button class="org-button" type="submit">Search</button>
+          </select>
+        </div>
+        <br>
+        <div>
+          <label id="formclass" for="">Return Date & Time
+          </label>
+          <input type="date" id="end" name="endDate" value="2019-02-24">
+          <select name="endTime">
+            <option value="00:00">midnight</option>
+            <option value="00:30">12:30 am</option>
+            <option value="01:00">01:00 am</option>
+            <option value="01:30">01:30 am</option>
+            <option value="02:00">02:00 am</option>
+            <option value="02:30">02:30 am</option>
+            <option value="03:00">03:00 am</option>
+            <option value="03:30">03:30 am</option>
+            <option value="04:00">04:00 am</option>
+            <option value="04:30">04:30 am</option>
+            <option value="05:00">05:00 am</option>
+            <option value="05:30">05:30 am</option>
+            <option value="06:00">06:00 am</option>
+            <option value="06:30">06:30 am</option>
+            <option value="07:00">07:00 am</option>
+            <option value="07:30">07:30 am</option>
+            <option value="08:00">08:00 am</option>
+            <option value="08:30">08:30 am</option>
+            <option value="09:00">09:00 am</option>
+            <option value="09:30">09:30 am</option>
+            <option value="10:00">10:00 am</option>
+            <option value="10:30">10:30 am</option>
+            <option value="11:00">11:00 am</option>
+            <option value="11:30">11:30 am</option>
+            <option value="12:00">12:00 pm</option>
+            <option value="12:30">12:30 pm</option>
+            <option value="13:00">13:00 pm</option>
+            <option value="13:30">13:30 pm</option>
+            <option value="14:00">14:00 pm</option>
+            <option value="14:30">14:30 pm</option>
+            <option value="15:00">15:00 pm</option>
+            <option value="15:30">15:30 pm</option>
+            <option value="16:00">16:00 pm</option>
+            <option value="16:30">16:30 pm</option>
+            <option value="17:00">17:00 pm</option>
+            <option value="17:30">17:30 pm</option>
+            <option value="18:00">18:00 pm</option>
+            <option value="18:30">18:30 pm</option>
+            <option value="19:00">19:00 pm</option>
+            <option value="19:30">19:30 pm</option>
+            <option value="20:00">20:00 pm</option>
+            <option value="20:30">20:30 pm</option>
+            <option value="21:00">21:00 pm</option>
+            <option value="21:30">21:30 pm</option>
+            <option value="22:00">22:00 pm</option>
+            <option value="22:30">22:30 pm</option>
+            <option value="23:00">23:00 pm</option>
+            <option value="23:30">23:30 pm</option>
+          </select>
+        </div>
+        <br>
+        <button class="org-button" type="submit">Search</button>
     </form>
+  </div>
   </div>
 </section>
 
@@ -155,13 +157,14 @@
 <section class="make">
   <div class="make-text">
     <h1> What you need to know</h1>
-    <p>JUT has become a leading name in the past 2 months. The company's exceptional customer service makes it once of the world's top brands for customer retention</p>
+    <p>JUT has become a leading name in the past 2 months. The company's exceptional customer service makes it once of
+      the world's top brands for customer retention</p>
   </div>
 
   <div>
     <div class="asides">
       <aside class="make-box col col-3">
-     <img class="icons" src="/images/smile.jpeg" alt="map">
+        <img class="icons" src="/images/smile.jpeg" alt="map">
         <h3>Always the car you want</h3>
         <p class="text"></p>Book a car, hop in, and relax</p>
       </aside>
@@ -173,7 +176,7 @@
       </aside>
 
       <aside class="make-box col col-3">
-        <img class="icons" src="/images/audi.jpeg" alt="map"> 
+        <img class="icons" src="/images/audi.jpeg" alt="map">
         <h3> Book a car in 60 seconds</h3>
         <p class="text">Easy searching & booking</p>
       </aside>
@@ -182,25 +185,21 @@
   </div>
 </section>
 
-{{!-- /images/map.png --}}
 <br>
 
-  <div class="firstfooter">
-    <ul class="footer-grid">
-<li><a class="footer-link" href="#">About us</a></li>
-<li><a class="footer-link" href="#">Rent a car</a></li>
-<li><a class="footer-link" href="#">Policies</a></li>
-<li><a class="footer-link" href="#">Top cities</a></li>
-<li><a class="footer-link" href="#">FAQs</a></li>
-</ul>
-  </div>
-
-
+<div class="firstfooter">
+  <ul class="footer-grid">
+    <li><a class="footer-link" href="#">About us</a></li>
+    <li><a class="footer-link" href="#">Rent a car</a></li>
+    <li><a class="footer-link" href="#">Policies</a></li>
+    <li><a class="footer-link" href="#">Top cities</a></li>
+    <li><a class="footer-link" href="#">FAQs</a></li>
+  </ul>
+</div>
 
 <div class="bottom-container">
   <a class="footer-link" href="https://www.linkedin.com/">Contact us</a>
   <a class="footer-link" href="https://twitter.com/">Twitter</a>
   <a class="footer-link" href="https://www.facebook.com/">Facebook</a>
   <p class="copyright">©CopyRight 2019 Andres Hernandez.</p>
-
 </div>

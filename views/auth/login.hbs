@@ -1,6 +1,5 @@
-
 <form action="/auth/login" method="POST" id="form">
-<h2 class="signupheader">Login</h2>
+  <h2 class="signupheader">Login</h2>
   <label for="username">Username</label>
   <input id="username" type="text" name="username" placeholder="WillCole">
 
@@ -10,7 +9,7 @@
   <input id="password" type="password" name="password" placeholder="Your password">
   <br>
   {{#if message }}
-    <div class="error-message">{{ message }}</div>
+  <div class="error-message">{{ message }}</div>
   {{/if}}
 
   <br><br>

@@ -13,13 +13,16 @@ router.post("/cars", async (req, res) => {
   let month = `${moment(req.body.startDate).format('MMMM DD YYYY')}`;
   const StartDate = `${month}, ${req.body.startTime}`;
 
+  console.log(req.body.location)
   const carsByLocation = await Car.find({
-    "location": { $regex: new RegExp(req.body.location), $options: 'x' },
+    "location": { $regex: req.body.location, $options: 'i'},
+    
     endDate: { $gte: StartDate }
   })
     .then(cars => {
+      console.log(cars)
       try {
-        if(carsByLocation.length <= 0){
+        if (carsByLocation.length <= 0) {
         }
         if (cars.length >= 1) {
         }
@@ -27,12 +30,12 @@ router.post("/cars", async (req, res) => {
       }
       return cars
     })
-    if(carsByLocation.length <= 0){
-      res.render('car/nocars')
-    } else {
-      res.render('car/cars', { cars: {...carsByLocation }  })
-    }
- 
+  if (carsByLocation.length <= 0) {
+    res.render('car/nocars')
+  } else {
+    res.render('car/cars', { cars: { ...carsByLocation } })
+  }
+
 })
 
 router.get("/cars/detail/:id", (req, res) => {

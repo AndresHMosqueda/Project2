@@ -60,7 +60,7 @@ hbs.registerHelper('ifUndefined', (value, options) => {
   
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'JUT-Rent a car worldwide, Great Deals';
 app.locals.loggedUser = false
 
 function isLogged(req, res, next) {
