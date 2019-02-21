@@ -1,8 +1,23 @@
 <h2>My cars:</h2>
 
-  <h3>{{cartype}}</h3>
-</a>
-<h6>{{cars.description}}</h6>
-<h6>{{cars.features}}</h6>
-<a href="/car/edit/{{car._id}}">Edit Car</a>
+{{#each cars as |car|}}
+
+<div class="mycarsview">
+    <img src="{{car.imagecar}}" alt="{{car.imagecar}}" class="mycarsimg">
+    <h2>{{car.carmodel}}</h2>
+    <b>
+      <p>Owner:
+    </b> {{car.owner}}</p>
+    <b>
+      <p>Features:
+    </b> {{car.features}}</p>
+    <b>
+      <p>Price:
+    </b> ${{car.priceperday}}MXN</p>
+
+
+</div>
+<br>
+<a href="/cars/mycars/edit/{{car._id}}">Edit Car</a>
 <a href="car/delete/{{car._id}}">Delete Car</a>
+{{/each}}

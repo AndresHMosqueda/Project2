@@ -8,11 +8,59 @@ const multer = require('multer');
 const upload = multer({ dest: './public/uploads/' });
 const bodyParser = require('body-parser')
 
+//delete car
+router.get('/delete/:id', (req, res, next) => {
+  const {id} = req.params
+  console.log(id)
+  Car.findByIdAndRemove(id)
+    .then((car) => {
+      res.redirect('cars', car)
+    })
+    .catch(err => {
+      req.app.locals.error = err
+    })
+})
 
+//edit car
+router.get('/cars/mycars/edit/:id', (req, res, next) => {
+  const {id} = req.params
+  Car.findById(id)
+  .then(cars => {
+    const config = {
+      action: `/cars/edit/${cars._id}`,
+      submit: "Update",
+      location: cars.location,
+      cartype: cars.cartype,
+    }
+    res.render("", config)
+  })
+  .catch(err => {
+    res.send(err)
+  })
+})
+
+//edit car
+router.post('/cars/edit/:id', (req, res, next) => {
+  const {id} = req.params
+  Car.findByIdAndUpdate(id, {...req.body}, {new: true})
+  .then(() => {
+    res.redirect(`/cars/detail/${id}`)
+  })
+  .catch(err => {
+    res.send(err)
+  })
+})
+
+//user list cars
 router.get("/cars/mycars", (req, res) => {
-      res.render("car/mycars");
+  Car.find({user:req.user._id})
+  .then(cars=>{
+    console.log(cars)
+    res.render("car/mycars", {cars});
+  })
 });
 
+//filter by cartype
 router.post('/filter', (req, res, next) => {
   const {filter} = req.body
   Car.find({ cartype: { $regex: filter, $options: 'i' } })
@@ -21,6 +69,7 @@ router.post('/filter', (req, res, next) => {
   })
 })
 
+//sort by price
 router.post('/sort', (req, res, next) => {
   const {sort} = req.body
   Car.find().sort({ priceperday: sort })
@@ -36,9 +85,10 @@ router.post("/cars/listcar",  (req, res, next) => {
     features: [
       req.body.BIKE,
       req.body.USB
-    ]
+    ],
+    user: req.user._id
   }
-  const createCar = new Car({ ...payload });
+  const createCar = new Car(payload);
   createCar.save()
     .then(auto => {
       res.render('car/new', {auto})
@@ -100,7 +150,7 @@ router.post("/cars/detail/:id/checkout", (req, res) => {
 });
 
 router.get("/cars/listcar", function (req, res, next) {
-  Picture.find((err, pictures) => {
+  Car.find((err, pictures) => {
     res.render("customer-list/listcar");
   });
 })

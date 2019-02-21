@@ -14,6 +14,8 @@ const carSchema = new Schema({
   carmodel: String,
   passengers: String,
   name: String,
+  user: { type: Schema.Types.ObjectId, 
+  ref: "User"},
   owner: String,
   features: [String],
   imagecar: String,

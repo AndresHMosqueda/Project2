@@ -321,13 +321,14 @@ footer {
   background-color: #201C24;
   display: inline-block;
   width: 100vw;
-  height: 70px; }
+  height: 70px;
+  padding-bottom: 10px; }
 
 .bottom-container {
   text-align: center;
   display: block;
   background-color: #201C24;
-  padding: 30px 0 20px;
+  padding: 50px 0 20px;
   height: 60px;
   color: white;
   width: 100vw; }
@@ -446,5 +447,9 @@ footer {
 .check h2 {
   color: orange;
   text-align: center; }
+
+.mycarsimg {
+  width: 250px;
+  height: 210px; }
 
 /*# sourceMappingURL=style.css.map */
