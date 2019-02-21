@@ -20,7 +20,7 @@ router.post('/filter', (req, res, next) => {
     res.render('car/cars', { cars })
   })
 })
-
+//nosrive
 router.post('/sort', (req, res, next) => {
   const {sort} = req.body
   Car.find().sort({ priceperday: sort })
