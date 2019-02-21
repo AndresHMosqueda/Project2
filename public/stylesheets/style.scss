@@ -451,9 +451,9 @@ color: white;
   margin: 30px auto;
   width: 380px;
 }
-
+#form select,
 #form label {
-  color: #666;
+  color: #4B0082;
   display: inline-block;
   margin-bottom: 10px;
   text-align: center;
@@ -461,6 +461,7 @@ color: white;
 }
 
 #form input,
+#form select,
 #form button {
   box-sizing: border-box;
   font-size: 14px;
@@ -468,7 +469,10 @@ color: white;
   padding: 4px;
   width: 100%;
   margin-bottom: 22px;
+  text-align: center;
+  color: #3b5998
 }
+
 
 .forminput {
   width: 20px;

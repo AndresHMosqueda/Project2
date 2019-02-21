@@ -9,6 +9,10 @@ const upload = multer({ dest: './public/uploads/' });
 const bodyParser = require('body-parser')
 
 
+router.get("/cars/mycars", (req, res) => {
+      res.render("car/mycars");
+});
+
 router.post('/filter', (req, res, next) => {
   const {filter} = req.body
   Car.find({ cartype: { $regex: filter, $options: 'i' } })
