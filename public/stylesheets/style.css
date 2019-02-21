@@ -123,7 +123,11 @@ footer {
   border: none;
   background-color: #F1F72E;
   color: black;
-  font-weight: 600; }
+  font-weight: 600;
+  cursor: pointer; }
+
+.org-button:hover {
+  color: gray; }
 
 .bookbutton {
   border: none;
@@ -200,7 +204,11 @@ footer {
 
 .list-signup {
   background-color: #A048F8;
-  color: white; }
+  color: white;
+  cursor: pointer; }
+
+.list-signup:hover {
+  color: #a3a1a1; }
 
 .make {
   background-color: white;

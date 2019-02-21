@@ -19,22 +19,18 @@ router.post("/cars", async (req, res) => {
   })
     .then(cars => {
       try {
-        if (cars.length <= 0) {
-          message = "No vehicles available"
+        if(carsByLocation.length <= 0){
         }
-
         if (cars.length >= 1) {
-          message = `There are ${cars.length} cars available`
         }
       } catch (error) {
-
       }
       return cars
     })
     if(carsByLocation.length <= 0){
       res.render('car/nocars')
-    }else{
-      res.render('car/cars', { cars: { ...carsByLocation } })
+    } else {
+      res.render('car/cars', { cars: {...carsByLocation }  })
     }
  
 })

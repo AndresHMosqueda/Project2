@@ -139,7 +139,11 @@ border-radius: 8px;
   border: none;
   background-color: #F1F72E;
   color: black;
-  font-weight: 600
+  font-weight: 600;
+  cursor: pointer
+ }
+ .org-button:hover {
+  color: gray
  }
 
  .bookbutton{
@@ -233,6 +237,11 @@ border-radius: 8px;
 .list-signup {
 background-color: #A048F8; 
 color: white;
+cursor: pointer;
+}
+
+.list-signup:hover{
+color: rgb(163, 161, 161);
 }
 
 .make {
