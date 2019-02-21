@@ -4,7 +4,7 @@ const Car = require("../models/Car")
 const mongoose = require('mongoose')
 const moment = require('moment');
 const multer = require('multer');
-const Picture = require('../models/picture');
+
 const upload = multer({ dest: './public/uploads/' });
 const bodyParser = require('body-parser')
 
