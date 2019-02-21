@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro");
 body {
-  min-width: 975px;
+  overflow-x: hidden;
   font-family: 'Maven Pro', sans-serif; }
 
 a {
@@ -26,8 +26,8 @@ html {
 nav {
   background-color: white;
   width: 100vw;
-  height: auto;
-  padding: 15px;
+  height: 100px;
+  padding: 05px;
   display: flex;
   align-items: center;
   justify-content: space-between; }
@@ -43,7 +43,15 @@ span {
 
 footer {
   width: 100vw;
-  padding: 40px 0; }
+  padding: 10px 0; }
+
+.logo {
+  font-size: 50px;
+  padding-left: 30px;
+  color: black; }
+
+.logo:hover {
+  color: gray; }
 
 .top-left {
   display: inline-block;
@@ -63,7 +71,7 @@ footer {
 .top-links {
   display: inline-block;
   padding: 0;
-  margin: 0 20px 0 0; }
+  margin: 0 05px 0 0; }
 
 .top-links li {
   display: inline-block;
@@ -169,6 +177,20 @@ footer {
 
 #formclass {
   color: #39373A; }
+
+.novehicles {
+  text-align: center;
+  padding: 30px;
+  color: orangered; }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 2rem;
+  align-items: center;
+  list-style: none;
+  padding-left: auto;
+  margin: 2rem; }
 
 .safety {
   color: #3b5998; }

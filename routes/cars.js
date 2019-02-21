@@ -9,24 +9,34 @@ const upload = multer({ dest: './public/uploads/' });
 const bodyParser = require('body-parser')
 
 
-router.post("/cars", (req, res) => {
+router.post("/cars", async (req, res) => {
   let month = `${moment(req.body.startDate).format('MMMM DD YYYY')}`;
   const StartDate = `${month}, ${req.body.startTime}`;
-  // 1- Buscar coche con formulario StartDate mayor al endDate de la base de datos
-  // 2- Si no hay disponibles mandar mensaje en pantalla
-  // BUSCAR CARROS DISPONIBLES
-  Car.find({ endDate: { $gte: StartDate }})
-    .then(cars => {
-      let message;
-      if (cars.length <= 0) {
-        message = "No vehicles available"
-      }
 
-      if (cars.length >= 1) {
-        message = `There are ${cars.length} cars available`
+  const carsByLocation = await Car.find({
+    "location": { $regex: new RegExp(req.body.location), $options: 'ig' },
+    endDate: { $gte: StartDate }
+  })
+    .then(cars => {
+      try {
+        if (cars.length <= 0) {
+          message = "No vehicles available"
+        }
+
+        if (cars.length >= 1) {
+          message = `There are ${cars.length} cars available`
+        }
+      } catch (error) {
+
       }
-      res.render('car/cars', { cars, message })
+      return cars
     })
+    if(carsByLocation.length <= 0){
+      res.render('car/nocars')
+    }else{
+      res.render('car/cars', { cars: { ...carsByLocation } })
+    }
+ 
 })
 
 router.get("/cars/detail/:id", (req, res) => {
@@ -50,12 +60,7 @@ router.get("/cars/detail/:id/checkout", (req, res) => {
 
 
 router.post("/cars/detail/:id/checkout", (req, res) => {
-
-  // mostrar mensaje de pago y redireccionar para que cobre
   res.send("Booked! We will send you an email with the car details")
-
-  // Enviar correos al owner del coche y al cliente que realizo la reservacion
-
 });
 
 router.get("/cars/listcar", function (req, res, next) {
@@ -64,36 +69,21 @@ router.get("/cars/listcar", function (req, res, next) {
   });
 })
 
-router.post("/cars/listcar",  async (req, res, next) =>{
-
+router.post("/cars/listcar", async (req, res, next) => {
   console.log(req.body)
-
-  // return res.json({
-  //   ...req.body,
-  //   features: [
-  //     {bike: req.body.bike},
-  //     {gps: req.body.GPS},
-  //     {audio: req.body.AUDIO}
-  //   ]
-  // })
-const payload= {
-  ...req.body,
-  features: {
-    bike: req.body.BIKE 
+  const payload = {
+    ...req.body,
+    features: {
+      bike: req.body.BIKE,
+      usb: req.body.USB
+    }
   }
-}
-  const createCar = new Car({...payload});
-
+  const createCar = new Car({ ...payload });
   createCar.save()
-   .then(auto => {   
+    .then(auto => {
       res.render('', { message: "Tu post se creo" })
     })
     .catch(e => res.send(e))
-
- 
 })
-
-
-
 
 module.exports = router;
