@@ -14,7 +14,7 @@ router.post("/cars", async (req, res) => {
   const StartDate = `${month}, ${req.body.startTime}`;
 
   const carsByLocation = await Car.find({
-    "location": { $regex: new RegExp(req.body.location), $options: 'ig' },
+    "location": { $regex: new RegExp(req.body.location), $options: 'x' },
     endDate: { $gte: StartDate }
   })
     .then(cars => {

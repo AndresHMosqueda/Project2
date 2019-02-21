@@ -150,7 +150,12 @@ border-radius: 8px;
   border: none;
   background-color: #F1F72E;
   color: black;
-  font-weight: 600
+  font-weight: 600;
+  cursor: pointer
+ }
+
+ .bookbutton:hover{
+   color: white
  }
 
  .detailcar{
@@ -335,8 +340,8 @@ padding: 5px;}
 
   .you-wont{
     font-size: 10px;
-    margin-left: 15px;
-    padding-left: 6px;
+    margin-left: 10px;
+ 
   }
 
 .copyright {
