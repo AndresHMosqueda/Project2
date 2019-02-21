@@ -15,10 +15,7 @@ const carSchema = new Schema({
   passengers: String,
   name: String,
   owner: String,
-  features: {
-    bike: String,
-    usb: String
-  },
+  features: [String],
   imagecar: String,
   description: String,
   startDate: String,

@@ -1,16 +1,16 @@
 <div class="dropdown">
-  <form action="/sort" method="POST">
+  <form action="/sort" method="POST" class="filters">
   <select name="sort" id="">
-    <option selected='selected'>Sort</option>
+    <option selected='selected'>Sort By</option>
     <option value="1" name="<" id="">Price Low - Price High</option>
     <option value="-1" name=">" id="">Price High - Price Low</option>
   </select>
-    <input type="submit" value="Sort">
+    <input type="submit" value="Apply">
   </form>
   
-  <form action="/filter" method="POST">
-    <select name="filter" id="">
-      <option selected='selected'>Filter</option>
+  <form action="/filter" method="POST" class="filters">
+    <select  class="filters" name="filter" id="">
+      <option selected='selected'>Filter By</option>
       <option value="Minivan">Minivan</option>
       <option value="Sedan">Sedan</option>
       <option value="Truck">Truck</option>
@@ -20,7 +20,7 @@
       <option value="Sports Car">Sports Car</option>
       <option value="Luxury Car">Luxury Car</option>
     </select>
-    <input type="submit" value="Filter by type">
+    <input class="filters" type="submit" value="Filter by type">
   </form>
   <h2>Select car:<h2>
       <br>

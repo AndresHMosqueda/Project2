@@ -25,6 +25,23 @@ router.post('/sort', (req, res, next) => {
   })
 })
 
+router.post("/cars/listcar",  (req, res, next) => {
+  console.log(req.body)
+  const payload = {
+    ...req.body,
+    features: [
+      req.body.BIKE,
+      req.body.USB
+    ]
+  }
+  const createCar = new Car({ ...payload });
+  createCar.save()
+    .then(auto => {
+      res.render('car/new', {auto})
+    })
+    .catch(e => res.send(e))
+})
+
 router.post("/cars", async (req, res) => {
   let month = `${moment(req.body.startDate).format('MMMM DD YYYY')}`;
   const StartDate = `${month}, ${req.body.startTime}`;
@@ -84,21 +101,6 @@ router.get("/cars/listcar", function (req, res, next) {
   });
 })
 
-router.post("/cars/listcar", async (req, res, next) => {
-  console.log(req.body)
-  const payload = {
-    ...req.body,
-    features: {
-      bike: req.body.BIKE,
-      usb: req.body.USB
-    }
-  }
-  const createCar = new Car({ ...payload });
-  createCar.save()
-    .then(auto => {
-      res.render('', { message: "Tu post se creo" })
-    })
-    .catch(e => res.send(e))
-})
+
 
 module.exports = router;

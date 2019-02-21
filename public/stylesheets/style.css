@@ -378,6 +378,16 @@ footer {
   transition: .3s ease background;
   width: 100%; }
 
+.newcar {
+  text-align: center;
+  color: green; }
+
+.filters {
+  display: inline;
+  cursor: pointer;
+  padding: 3px;
+  transition: .3s ease background; }
+
 #containercheckout button:hover {
   background: #F1F72E;
   color: white;
