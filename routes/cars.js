@@ -9,6 +9,22 @@ const upload = multer({ dest: './public/uploads/' });
 const bodyParser = require('body-parser')
 
 
+router.post('/filter', (req, res, next) => {
+  const {filter} = req.body
+  Car.find({ cartype: { $regex: filter, $options: 'i' } })
+  .then(cars => {
+    res.render('car/cars', { cars })
+  })
+})
+
+router.post('/sort', (req, res, next) => {
+  const {sort} = req.body
+  Car.find().sort({ priceperday: sort })
+  .then(cars => {
+    res.render('car/cars', {cars})
+  })
+})
+
 router.post("/cars", async (req, res) => {
   let month = `${moment(req.body.startDate).format('MMMM DD YYYY')}`;
   const StartDate = `${month}, ${req.body.startTime}`;

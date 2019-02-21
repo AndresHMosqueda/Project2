@@ -1,7 +1,27 @@
 <div class="dropdown">
-  <button>Sort By</button>
-
-  <button>Filter By</button>
+  <form action="/sort" method="POST">
+  <select name="sort" id="">
+    <option selected='selected'>Sort</option>
+    <option value="1" name="<" id="">Price Low - Price High</option>
+    <option value="-1" name=">" id="">Price High - Price Low</option>
+  </select>
+    <input type="submit" value="Sort">
+  </form>
+  
+  <form action="/filter" method="POST">
+    <select name="filter" id="">
+      <option selected='selected'>Filter</option>
+      <option value="Minivan">Minivan</option>
+      <option value="Sedan">Sedan</option>
+      <option value="Truck">Truck</option>
+      <option value="Wagon">Wagon</option>
+      <option value="SUV">SUV</option>
+      <option value="Crossover">Crossover</option>
+      <option value="Sports Car">Sports Car</option>
+      <option value="Luxury Car">Luxury Car</option>
+    </select>
+    <input type="submit" value="Filter by type">
+  </form>
   <h2>Select car:<h2>
       <br>
       <div id="container">
