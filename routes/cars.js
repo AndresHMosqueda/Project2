@@ -88,8 +88,8 @@ router.post("/cars/listcar",  (req, res, next) => {
   const payload = {
     ...req.body,
     features: [
-      req.body.BIKE,
-      req.body.USB
+      req.body.GPS,
+      req.body.USB,
     ],
     user: req.user._id
   }
