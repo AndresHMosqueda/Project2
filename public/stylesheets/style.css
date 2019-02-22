@@ -210,7 +210,8 @@ footer {
   align-items: center;
   list-style: none;
   padding-left: auto;
-  margin: 2rem; }
+  margin: 2rem;
+  line-height: 30px; }
 
 .safety {
   color: #3b5998; }
@@ -333,6 +334,9 @@ footer {
   color: white;
   width: 100vw; }
 
+.footertitle {
+  color: #FFD60D; }
+
 .google-btn {
   color: #fff;
   text-decoration: none;
@@ -341,7 +345,10 @@ footer {
   background: #ff5353; }
 
 .footer-link {
-  color: white; }
+  color: white;
+  line-height: 10px;
+  margin: 10px;
+  padding: 10px; }
 
 #containercheckout {
   margin: 30px auto;
