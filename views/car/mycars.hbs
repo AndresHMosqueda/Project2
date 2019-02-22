@@ -14,10 +14,10 @@
     <b>
       <p>Price:
     </b> ${{car.priceperday}}MXN</p>
-
+<br>
+<a class="anchor-edit" href="/cars/mycars/edit/{{car._id}}">Edit Car</a>
+<a class="anchor-edit-delete" href="/delete/{{car._id}}">Delete Car</a>
 
 </div>
-<br>
-<a href="/cars/mycars/edit/{{car._id}}">Edit Car</a>
-<a href="car/delete/{{car._id}}">Delete Car</a>
+
 {{/each}}

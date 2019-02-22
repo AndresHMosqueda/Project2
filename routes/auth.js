@@ -14,8 +14,18 @@ function isLogged(req, res, next) {
   return res.redirect('/login')
 }
 
+function noDoubleLoggin(req, res, next) {
+  if (req.isAuthenticated()) {return true}
+  else return false;
+}
+
 router.get("/login", (req, res, next) => {
-  res.render("auth/login", { "message": req.flash("error") });
+  if(noDoubleLoggin(req, res)){
+    res.redirect("/");
+  }else{
+    res.render("auth/login", { "message": req.flash("error") });
+  }
+  
 });
 
 router.post("/login", passport.authenticate("local", {
@@ -26,7 +36,12 @@ router.post("/login", passport.authenticate("local", {
 }));
 
 router.get("/signup", (req, res, next) => {
-  res.render("auth/signup");
+  if(noDoubleLoggin(req, res)){
+    res.redirect("/");
+  }else{
+    res.render("auth/signup");
+  }
+  
 });
 
 router.post("/signup", (req, res, next) => {

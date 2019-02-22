@@ -1,0 +1,73 @@
+<form action="{{current.action}}" method="POST" id="form">
+  <h1>Edit Car:</h1>
+
+  <hr>
+  <h3>Your car</h3>
+
+  <div>
+    <label for="">Where is your car located? City </label>
+    <input type="text" required='true' value="{{current.location}}" placeholder="Enter City" name="location"
+      autocomplete="on">
+
+    <label for="">Car Type( Sports car, Hybridy/Electric, Crossover) </label>
+    <input type="text" required='true' placeholder="SUV, Truck, Sedan, Minivan, Coupe, Wagon, Convertible"
+      name="cartype" value="{{current.cartype}}" >
+
+    <label for="">Car brand & model </label>
+    <input type="text" placeholder="Enter car model" name="carmodel" value="{{current.carmodel}}" >
+
+    <label for="">Passengers</label>
+    <input type="text" placeholder="Seating for" name="passengers" value="{{current.passengers}}">
+
+    <label for="">Price per day</label>
+    <input type="text" placeholder="Price per day" name="priceperday" value="{{current.priceperday}}">
+  </div>
+
+  <h5>Car details</h5>
+
+  <div>
+    <label for="">Car description</label>
+  </div>
+  <div>
+    <textarea id="" cols="70" rows="10" name="description"
+      placeholder="A detailed description will help to get more reservations" value="{{current.description}}" ></textarea>
+  </div>
+  <p>No need to include your contact info, travelers will receive it once you confirm their trip</p>
+  </div>
+
+   <div class="featuresbox">
+      <h5>Car features</h5>
+
+      <label>GPS
+        <input class="forminput" type="checkbox" name="Gps"  value="{{current.Gps}}" />
+      </label>
+
+      <label> Audio input
+        <input class="forminput" type="checkbox" name="AUDIO" value="{{current.AUDIO}}"  >
+      </label>
+
+      <label for="USB"> USB input
+        <input class="forminput" type="checkbox"name="USB" value="{{current.USB}}" >
+      </label>
+
+      <label> Bike rack
+        <input class="forminput" type="checkbox" name="BIKE" value="{{current.BIKE}}" >
+      </label>
+
+    </div>
+
+  <div>
+    <h5>Car photos </h5>
+    <p>It's important for travelers to see your car before they request it. Once you have the perfect photo that shows
+      the whole car, add more photos displaying the car's details and interior</p>
+  </div>
+
+  <label for="">Copy Image Address and paste it below:</label>
+  <div>
+    <input type="text" name="imagecar" value="{{current.imagecar}}" >
+
+  </div>
+
+  <button type="submit" value="Enviar">Update Car </button>
+
+</form>

@@ -14,7 +14,7 @@ router.get('/delete/:id', (req, res, next) => {
   console.log(id)
   Car.findByIdAndRemove(id)
     .then((car) => {
-      res.redirect('cars', car)
+      res.redirect('car/cars', car)
     })
     .catch(err => {
       req.app.locals.error = err
@@ -24,15 +24,18 @@ router.get('/delete/:id', (req, res, next) => {
 //edit car
 router.get('/cars/mycars/edit/:id', (req, res, next) => {
   const {id} = req.params
+
+  
   Car.findById(id)
   .then(cars => {
-    const config = {
+  
+    const current = {
       action: `/cars/edit/${cars._id}`,
       submit: "Update",
       location: cars.location,
       cartype: cars.cartype,
-    }
-    res.render("", config)
+    }    
+    res.render("customer-list/update",  {current})
   })
   .catch(err => {
     res.send(err)
@@ -42,8 +45,10 @@ router.get('/cars/mycars/edit/:id', (req, res, next) => {
 //edit car
 router.post('/cars/edit/:id', (req, res, next) => {
   const {id} = req.params
+  // return res.json({ok:true, id})
   Car.findByIdAndUpdate(id, {...req.body}, {new: true})
   .then(() => {
+  
     res.redirect(`/cars/detail/${id}`)
   })
   .catch(err => {
