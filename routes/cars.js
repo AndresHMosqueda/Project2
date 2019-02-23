@@ -3,9 +3,6 @@ const router = express.Router();
 const Car = require("../models/Car")
 const mongoose = require('mongoose')
 const moment = require('moment');
-const multer = require('multer');
-
-const upload = multer({ dest: './public/uploads/' });
 const bodyParser = require('body-parser')
 
 //delete car
@@ -55,6 +52,7 @@ router.post('/cars/edit/:id', (req, res, next) => {
     res.send(err)
   })
 })
+
 
 //user list cars
 router.get("/cars/mycars", (req, res) => {

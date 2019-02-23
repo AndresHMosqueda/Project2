@@ -216,16 +216,13 @@ footer {
 .safety {
   color: #3b5998; }
 
-.what-text {
-  color: black; }
-
 .list-signup {
   background-color: #A048F8;
-  color: white;
-  cursor: pointer; }
+  cursor: pointer;
+  color: white; }
 
 .list-signup:hover {
-  color: #a3a1a1; }
+  color: white; }
 
 .make {
   background-color: white;

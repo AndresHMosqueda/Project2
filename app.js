@@ -83,7 +83,6 @@ app.use(session({
 app.use(flash());
 require('./passport')(app);
     
-
 const index = require('./routes/index');
 app.use('/',isLogged, index);
 
@@ -93,6 +92,8 @@ app.use('/auth',isLogged, authRoutes);
 const carsRoutes = require('./routes/cars');
 app.use('/',isLogged, carsRoutes);
 
-      
+const footerRoutes = require('./routes/footer');
+app.use('/',isLogged, footerRoutes);
 
+ 
 module.exports = app;
